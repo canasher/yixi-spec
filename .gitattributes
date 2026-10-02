@@ -1,0 +1,7 @@
+# 文本保持LF；Office与归档文件保留原始字节。
+* text=auto eol=lf
+*.docx -text
+*.xlsx -text
+*.zip -text
+# Markdown的行末双空格是显式换行，迁移时保留原排版。
+*.md whitespace=-blank-at-eol

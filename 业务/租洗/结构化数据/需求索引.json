@@ -1,0 +1,227 @@
+[
+  {
+    "id": "FR-R001",
+    "name": "客户资料与酒店身份",
+    "scope": "一期交付",
+    "definition": "客户维护、启停、详情、重置登录凭据；酒店身份只能访问已绑定客户，不等于员工或资金账户。",
+    "rules": "BR-R003",
+    "tasks": "TASK-02,TASK-03,TASK-18",
+    "uat": "UAT-R001,UAT-R002"
+  },
+  {
+    "id": "FR-R002",
+    "name": "服务规则、库存池与配额",
+    "scope": "一期交付/依赖",
+    "definition": "酒店+服务明细固定模式、追踪、价格和配额规则；兼容共享与专属池，保存规则版本。",
+    "rules": "BR-R002,BR-R013",
+    "tasks": "TASK-03,TASK-07",
+    "uat": "UAT-R005,UAT-R029,UAT-R030"
+  },
+  {
+    "id": "FR-R003",
+    "name": "品项、仓库与业务字典",
+    "scope": "一期交付",
+    "definition": "维护品项、单位、每扎件数、库位；核心状态不可由数据字典任意修改。",
+    "rules": "BR-R002,BR-R029",
+    "tasks": "TASK-03",
+    "uat": "UAT-R003,UAT-R004"
+  },
+  {
+    "id": "FR-R004",
+    "name": "注册、激活与期初",
+    "scope": "一期交付/依赖",
+    "definition": "资产注册、初始绑定；激活和期初流水作为操作依赖，含酒店持有及对应未回占用初始化。",
+    "rules": "BR-R004,BR-R005",
+    "tasks": "TASK-04",
+    "uat": "UAT-R006,UAT-R007,UAT-R008"
+  },
+  {
+    "id": "FR-R005",
+    "name": "标签查询与芯片更换",
+    "scope": "一期交付",
+    "definition": "旧新标签关系可追溯，同一资产身份、累计次数不重置；在途冲突受控。",
+    "rules": "BR-R006",
+    "tasks": "TASK-04",
+    "uat": "UAT-R009,UAT-R010"
+  },
+  {
+    "id": "FR-R006",
+    "name": "司机/工厂/工作台收货",
+    "scope": "一期交付",
+    "definition": "单店、多店、无人收脏及复核补漏，原始事件与有效回收区别处理。",
+    "rules": "BR-R007,BR-R008,BR-R009",
+    "tasks": "TASK-05,TASK-06",
+    "uat": "UAT-R011,UAT-R012,UAT-R013,UAT-R014"
+  },
+  {
+    "id": "FR-R007",
+    "name": "租洗收货单与日汇总",
+    "scope": "一期交付",
+    "definition": "租洗日汇总承接有效记录；不重复入库；迟到和冲正可追溯。",
+    "rules": "BR-R010",
+    "tasks": "TASK-06,TASK-17",
+    "uat": "UAT-R017,UAT-R018"
+  },
+  {
+    "id": "FR-R008",
+    "name": "轻量产出确认与租赁打扎",
+    "scope": "一期交付/依赖",
+    "definition": "工作台确认产出与组扎为两个事实；重打不重计洗；柜机发货走同一业务服务。",
+    "rules": "BR-R011,BR-R012",
+    "tasks": "TASK-08",
+    "uat": "UAT-R021,UAT-R022,UAT-R023,UAT-R024"
+  },
+  {
+    "id": "FR-R009",
+    "name": "租洗订货、发货与备货",
+    "scope": "一期交付/依赖",
+    "definition": "订单来源最小采用工厂受控代录；备货列表、锁单、明细预留和差异处理；不强制增加酒店下单页面。",
+    "rules": "BR-R013,BR-R014,BR-R015",
+    "tasks": "TASK-09",
+    "uat": "UAT-R031,UAT-R032,UAT-R033"
+  },
+  {
+    "id": "FR-R010",
+    "name": "装车、送达与退回",
+    "scope": "一期交付",
+    "definition": "实际装载、交付和取消后去向分别保留；送达不伪造客户人工签名。",
+    "rules": "BR-R016,BR-R017,BR-R018",
+    "tasks": "TASK-10",
+    "uat": "UAT-R034,UAT-R035,UAT-R036,UAT-R037"
+  },
+  {
+    "id": "FR-R011",
+    "name": "库存、资产与客户持有",
+    "scope": "一期交付",
+    "definition": "RFID单件为位置明细，汇总不可独立编辑；所有权、可发量、当前持有和配额占用分开。",
+    "rules": "BR-R002,BR-R008,BR-R027",
+    "tasks": "TASK-04,TASK-17",
+    "uat": "UAT-R015,UAT-R051"
+  },
+  {
+    "id": "FR-R012",
+    "name": "五类查询/盘点入口",
+    "scope": "一期交付",
+    "definition": "疑失查找、指定客户盘点、点数、厂内呆滞和净仓盘点；结果确认与调账分开。",
+    "rules": "BR-R022",
+    "tasks": "TASK-16",
+    "uat": "UAT-R047,UAT-R048,UAT-R049,UAT-R050"
+  },
+  {
+    "id": "FR-R013",
+    "name": "疑失、丢失赔偿与回购",
+    "scope": "一期交付；商业生效设门槛",
+    "definition": "资产事实、客户责任、自动核准和资金后果分开；自动规则配置后生效，无规则不擅自扣退。",
+    "rules": "BR-R019,BR-R026",
+    "tasks": "TASK-15",
+    "uat": "UAT-R043,UAT-R044,UAT-R045,UAT-R046"
+  },
+  {
+    "id": "FR-R014",
+    "name": "返洗、特洗、重污破损、报废",
+    "scope": "一期交付",
+    "definition": "不同业务结果及费用依据独立；生产终端特洗按钮二期，但一期PC需有受控完成入口。",
+    "rules": "BR-R020,BR-R021",
+    "tasks": "TASK-14",
+    "uat": "UAT-R025,UAT-R026,UAT-R027,UAT-R028"
+  },
+  {
+    "id": "FR-R015",
+    "name": "客户报价和特殊价格",
+    "scope": "一期交付",
+    "definition": "客户品项报价、特殊处理价格、有效期及单据快照；不前移动态调价与报价模板。",
+    "rules": "BR-R023",
+    "tasks": "TASK-11",
+    "uat": "UAT-R038,UAT-R039"
+  },
+  {
+    "id": "FR-R016",
+    "name": "客户账单与导出",
+    "scope": "一期交付",
+    "definition": "费用来源、账单编辑更正、核准、结算明细、列表/账单导出；不是完整财务总账。",
+    "rules": "BR-R025,BR-R031",
+    "tasks": "TASK-13",
+    "uat": "UAT-R041,UAT-R042"
+  },
+  {
+    "id": "FR-R017",
+    "name": "客户资金账户、充值与流水",
+    "scope": "一期交付；商业生效设门槛",
+    "definition": "线下凭证充值审核作为推荐最小通道；充值/赠送/信用分维度，重复核准不重复入账。",
+    "rules": "BR-R024",
+    "tasks": "TASK-12",
+    "uat": "UAT-R040,UAT-R058,UAT-R059"
+  },
+  {
+    "id": "FR-R018",
+    "name": "酒店H5查询与日报月报",
+    "scope": "一期交付",
+    "definition": "原一期15组页面，客户范围校验，统计明细可追溯；不自动增加下单/支付/签收按钮。",
+    "rules": "BR-R003,BR-R027",
+    "tasks": "TASK-17,TASK-18",
+    "uat": "UAT-R052,UAT-R053,UAT-R054"
+  },
+  {
+    "id": "FR-R019",
+    "name": "设备连接、芯片同步与版本更新",
+    "scope": "一期交付",
+    "definition": "连接、读写协议、范围内增量同步、受控版本发布和客户端重试；具体硬件协议待实际联调。",
+    "rules": "BR-R007,BR-R028",
+    "tasks": "TASK-05,TASK-19",
+    "uat": "UAT-R055,UAT-R056,UAT-R057"
+  },
+  {
+    "id": "FR-R020",
+    "name": "收发配置、系统设置与定时任务",
+    "scope": "一期交付",
+    "definition": "固定类型化参数、受控定时任务、失败重试和可观测性；不开放任意SQL/脚本。",
+    "rules": "BR-R001,BR-R029",
+    "tasks": "TASK-20",
+    "uat": "UAT-R060,UAT-R061"
+  },
+  {
+    "id": "FR-R021",
+    "name": "权限、表头、文件与导出复用",
+    "scope": "一期交付/依赖",
+    "definition": "复用IAM、现有文件和导出基础；自定义表头仅显示偏好，不能改权限或报表口径。",
+    "rules": "BR-R003,BR-R031",
+    "tasks": "TASK-02,TASK-18",
+    "uat": "UAT-R062,UAT-R063"
+  },
+  {
+    "id": "FR-R022",
+    "name": "普洗有芯/无芯与多服务预留",
+    "scope": "结构预留/后续实现",
+    "definition": "同客户可多协议；单据明细容纳数量；所有权及来源分配保留；一期不开放普洗操作。",
+    "rules": "BR-R030",
+    "tasks": "TASK-03,TASK-21",
+    "uat": "UAT-R064,UAT-R065,UAT-R066"
+  },
+  {
+    "id": "FR-R023",
+    "name": "自动下单及更多订货来源",
+    "scope": "后续/显式范围变更",
+    "definition": "原资料详细描述但原清单未单列一期；本版留算法规格，不纳入首发承诺。",
+    "rules": "BR-R032",
+    "tasks": "TASK-22",
+    "uat": "UAT-R067,UAT-R068"
+  },
+  {
+    "id": "FR-R024",
+    "name": "配送线路、线路客户与车辆",
+    "scope": "一期交付",
+    "definition": "固定线路和客户顺序、车辆及司机任务；多店不等于跨工厂；不含自动最优路线。",
+    "rules": "BR-R016",
+    "tasks": "TASK-10",
+    "uat": "UAT-R069,UAT-R070"
+  },
+  {
+    "id": "FR-R090",
+    "name": "后续采购/商城/加盟商等独立扩展",
+    "scope": "后续实现",
+    "definition": "仅登记原清单期次，不以普洗预留为由开发这些独立业务。",
+    "rules": "BR-R001",
+    "tasks": "后续另行拆分",
+    "uat": "不纳入一期"
+  }
+]

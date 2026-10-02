@@ -1,0 +1,46 @@
+[
+  {
+    "source_id": "S1",
+    "filename": "第一期开发功能清单.xlsx",
+    "sha256": "0a45e5a1693540c2a23c2f4f1586cf24dc03d5b3239d6f84defe9b7a3a21fa94",
+    "usage": "原始期次、四端菜单及功能点；Sheet1!A1:G170，Sheet2/3为空"
+  },
+  {
+    "source_id": "S2",
+    "filename": "系统术语.docx",
+    "original_filename": "1系统术语(1).docx",
+    "sha256": "0655d3d79a4ecd5a37cfe9f11d382701ea7d3b2ba7c2a2a21b39e5fb6aa23a1e",
+    "usage": "洗涤模式、数量、配额、账户、订货、单据时间、扎码；原文12个大标题（自述11模块）"
+  },
+  {
+    "source_id": "S3",
+    "filename": "流程和状态说明.docx",
+    "original_filename": "2流程和状态说明(1).docx",
+    "sha256": "06639605d40f7d2e30784ccc26603e6ca7e7b782f95e6ddb8ced606f46b70071",
+    "usage": "12类状态及流程；原图与正文冲突分别保留"
+  },
+  {
+    "source_id": "S4",
+    "filename": "历史产品需求（一点一版）.md",
+    "original_filename": "yixi-saas-洗涤业务流程与产品需求说明-V1.1.md",
+    "archive": "历史设计原件.zip",
+    "sha256": "418c374438869600b8c93479e7c5fc0c2c7b7b92fce4ff0ca0bc10617ad8cdbe",
+    "usage": "上一版设计，原租洗+普洗同时首发及生产P0口径不作为本次一期范围"
+  },
+  {
+    "source_id": "S5",
+    "filename": "历史领域模型（一点二版）.md",
+    "original_filename": "yixi-saas-洗涤业务领域模型-V1.2.md",
+    "archive": "历史设计原件.zip",
+    "sha256": "e12a243d24ebde8a8e19fcb4e927b531e10e5ec921d8ba4740b9e1ddf61df303",
+    "usage": "上一版技术概念与PD编号；本版承接并调整"
+  },
+  {
+    "source_id": "S6",
+    "filename": "历史功能清单对照（20260919）.md",
+    "original_filename": "yixi-saas-功能清单设计对照说明-20260919.md",
+    "archive": "历史设计原件.zip",
+    "sha256": "5822184e4239f013e32e722b71f4e6b8308d27a9846184b557096bf50ca6e19b",
+    "usage": "前轮评审，不等于产品确认"
+  }
+]
