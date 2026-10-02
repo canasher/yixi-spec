@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "is_template": true,
+  "execution_id": null,
+  "kind": "DOCUMENTATION",
+  "mode": "DISCOVER",
+  "goal": null,
+  "authorization_ref": null,
+  "allowed_paths": [],
+  "excluded_actions": ["生产发布", "生产数据修改", "商业启用"],
+  "baselines": {"canasher/yixi-spec": null},
+  "candidates": {},
+  "task_ids": [],
+  "rule_set_version": null,
+  "rule_decisions": [],
+  "blockers": [],
+  "required_checks": [],
+  "checks": [],
+  "review": {
+    "status": "NOT_RUN",
+    "reviewer": null,
+    "evidence_ref": null,
+    "candidates": {},
+    "limitations": []
+  },
+  "resume": {"next_action": null, "remaining": [], "attempts": []}
+}
