@@ -1,0 +1,1287 @@
+{
+  "repository_index_note": "本文件为原冻结索引的仓库副本，仅增加归档定位与路径语义；业务事实和原指纹保持。",
+  "archive_ref": {
+    "access": "controlled",
+    "library_file_id": "libfile_279712085a988191a7c1de3415ed57e1",
+    "filename": "uat13-postrelease-9431b91-20261021.zip",
+    "bytes": 712445,
+    "sha256": "49bad0529177e4e85e87868482c92c103627e79b5e8ff1f10a198513b7a1a225",
+    "root": "uat13-postrelease-9431b91-20261021/",
+    "manifest_relative_path": "ARCHIVE-MANIFEST.json",
+    "manifest_sha256": "94ef21398cda14e0b43f202ab75e622a64afdfcd80ea7d289649dd7a338228ef",
+    "source_index_relative_path": "evidence-index.json",
+    "source_index_sha256": "a1f6febee31bb44e0d839a36c78d3b78c82a12a1dc8dd7f98f911d4ef1e91e3f",
+    "retrieval": "由当前工作会话的授权归档持有人按文件名和归档ID取回，先核对ZIP与manifest指纹；该ID不是公开下载链接。"
+  },
+  "path_semantics": "下列原证据条目的path均为archive_ref.root下的归档相对路径，不是仓库相对路径；截图条目单列，screenshot_archive_excluded为true且原截图条目的included_in_text_zip为false，保留在原对话附件。",
+  "screenshot_archive_excluded": true,
+  "screenshot_retention": "原验收对话附件，文件名154-bb-final-three-hg-visible.jpg；仅辅助展示，文本ZIP不包含该图片。",
+  "kind": "UAT13_postrelease_9431b91_evidence_index",
+  "status": "FROZEN_SCOPED_MANUAL_ACCEPTANCE_COMPLETE",
+  "created_at_utc": "2026-10-21T07:04:35.302664+00:00",
+  "release": {
+    "abbreviated_commit": "9431b91",
+    "repository": "canasher/yixi-web",
+    "branch": "codex/laundry-phase1-prototype",
+    "github_commit_readback": "主线程回读完整提交；独立代码执行者按完整SHA重新比较，ahead1/behind0/total1，仅六文件。",
+    "deployment": "用户声明已发布；GitHub源提交已核对。原Chrome热更新后BB3/QN110/SP48原规模保存与重载成功；开发模式启动时f7字段不等于当前模块完整SHA证明。",
+    "full_commit": "9431b91db74216e3ce3c0eee8cb01d1861242282",
+    "parent": "f7f4aa2ee065c349ee8e487cc86f174d06c03159",
+    "tree": "8b0d7116e0c1483637f7688c5a82d282192acbcf"
+  },
+  "protected_section1_23_sha256": "dea98c54d747842b3c599a27d275a8f0fbe4ea999fd93209e179a191a03b4afc",
+  "evidence": [
+    {
+      "path": "01-after-reload-original-bb.json",
+      "captured_at": "2026-10-21 07:06:48 UTC",
+      "bytes": 20152,
+      "sha256": "d6f7eefdebc432cd61567bb7d93034805df8af3d622a7c56880de560de05bc63",
+      "role": "用户声明发布后原Chrome稳定刷新：原五批次仍在，BB0/3、QN0/110，无SP；原BB报告及唯一保存报告操作不变。不证明新确认成功或页面构建SHA。"
+    },
+    {
+      "path": "02-bb-fresh-preview.json",
+      "captured_at": "2026-10-21 07:07:53 UTC",
+      "bytes": 3343,
+      "sha256": "a753830e47a3bd65dfd883c6b44cad902073a8bc4cc0f0d9a86c6470596607a3",
+      "role": "本轮显式新预览07:07:49.506Z，同原BB报告与清单SHA，Q3/T0/R0/O0/A3；拟确认影响，不是已提交结果。"
+    },
+    {
+      "path": "03-bb-submit-result.json",
+      "captured_at": "2026-10-21 07:08:12 UTC",
+      "bytes": 18175,
+      "sha256": "f63b9619202a9c1ad3bdc33587761051b450fdf99e3b9b69e028e0805918fd02",
+      "role": "实际提交后出现明确保存错误，三行保留且按钮仍loading；提交瞬时状态，待稳定回读。"
+    },
+    {
+      "path": "04-bb-error-diagnostics.json",
+      "captured_at": "2026-10-21 07:08:31 UTC",
+      "bytes": 3564,
+      "sha256": "a903ee3b9b5756cd14b566fd2ab52f71a2f37dfaab19288eebaa907b6344465c",
+      "role": "同一表单的错误与原三行仍在；日志数组为空，没有采集到write诊断、异常名或容量。"
+    },
+    {
+      "path": "05-bb-page-scripts-logs.json",
+      "captured_at": "2026-10-21 07:09:19 UTC",
+      "bytes": 2570,
+      "sha256": "fbe754551a0f014d79a8fd7d08af489b32cadf6289ddb0402b9072faa61e8317",
+      "role": "Vite脚本及相关页面热更新日志：07:08:30更新晚于03报错采集；不证明运行提交SHA。另有一次滚动CDP超时，不是新业务提交。"
+    },
+    {
+      "path": "07-version-after-hot-update.json",
+      "captured_at": "2026-10-21 07:10:28 UTC",
+      "bytes": 9921,
+      "sha256": "44ee2563a0be08410c0c0cf7fcbcbf5b7efa94a724ed8bf20a71ea1eb5c02e92",
+      "role": "热更新后的版本弹窗：开发模式、启动时f7、服务启动时间及允许热更新提示；不是当前模块完整SHA证明。"
+    },
+    {
+      "path": "08-bb-preview-after-hot-update.json",
+      "captured_at": "2026-10-21 07:10:54 UTC",
+      "bytes": 859,
+      "sha256": "1dbe2340b62ad489a0184ac8c4bbcd7be8e8c0bd590123c04ee7547edc9b5f08",
+      "role": "再打开原BB确认表单，仅表单，无预览依据。"
+    },
+    {
+      "path": "09-bb-new-preview-stable.json",
+      "captured_at": "2026-10-21 07:11:11 UTC",
+      "bytes": 442,
+      "sha256": "39252b4db84fc45fc1b0bf5dd01412b7cb01c1779f6e6bd0e7b8516ba62ec966",
+      "role": "实际为本次期初原依据区域无匹配的等待超时；文件名stable不代表稳定预览，属工具错误。"
+    },
+    {
+      "path": "10-bb-hot-updated-preview.json",
+      "captured_at": "2026-10-21 07:11:47 UTC",
+      "bytes": 3343,
+      "sha256": "8eeb647f460e69c9f68a9e0764e94a19df1ba40f8981f885aaef4269ad5e8c21",
+      "role": "热更新后正式新预览07:11:41.714Z：同原BB报告、来源与SHA，Q3/T0/R0/O0/A3，拟确认3件。"
+    },
+    {
+      "path": "11-bb-after-updated-submit.json",
+      "captured_at": "2026-10-21 07:12:03 UTC",
+      "bytes": 11334,
+      "sha256": "521a625c86ccb93314a6dbaaeb2b51b9e635e4c3870ac97f0266998ae21b9b4e",
+      "role": "第二阶段提交显示原BB3/0与保存成功提示；表单仍过渡，结合12刷新稳定证据判定。"
+    },
+    {
+      "path": "12-bb-reloaded-confirmed-original.json",
+      "captured_at": "2026-10-21 07:12:27 UTC",
+      "bytes": 4462,
+      "sha256": "4076c7e4752b8e01c346802af7a9aedb4b48172f77bf5153a90ca385d414ca47",
+      "role": "刷新后同原BB批次3/0，报告8212860435786621617，确认07:11:58.951Z，action3294550146848557352；同SHA且原保存报告历史保留。"
+    },
+    {
+      "path": "14-bb-quota-after-confirm.json",
+      "captured_at": "2026-10-21 07:12:56 UTC",
+      "bytes": 24796,
+      "sha256": "c9a681e6e814e18c506250f6b908f49455f39e9f1d9d7561edb0fc348f876a51",
+      "role": "原BB实际Q3/T0/R0/O3/A0，客户确认持有3，三件原批次占用及资产ID，待发来源空。"
+    },
+    {
+      "path": "15-bb-asset-z-detail.json",
+      "captured_at": "2026-10-21 07:13:30 UTC",
+      "bytes": 35653,
+      "sha256": "7384af39f444da132def3fe2cc3321b8a8ae3219661f215a653700533fb0c6ca",
+      "role": "BB原Z资产3040290405483690919，原轮8717900689830883044；酒店持有、已确认、洗次12、占用1，原批次和历史保留。"
+    },
+    {
+      "path": "16-bb-asset-f-detail.json",
+      "captured_at": "2026-10-21 07:13:48 UTC",
+      "bytes": 3857,
+      "sha256": "69563e37e2fc658b53d0756e9e2c8aa480ce4362d94278fc5da5f43d6ddc6a4e",
+      "role": "BB原F资产3332821927291220011，原轮3739989123429923616；同原服务账户、酒店持有、洗次12、占用1。"
+    },
+    {
+      "path": "17-bb-asset-h-detail.json",
+      "captured_at": "2026-10-21 07:14:04 UTC",
+      "bytes": 3857,
+      "sha256": "8adcd0157351b7d522a835899656331166bfad86a42d8401a39988f6fb1d83c7",
+      "role": "BB原H资产2188837326712989629，原轮8455683183665372572；同原服务账户、酒店持有、洗次12、占用1。"
+    },
+    {
+      "path": "18-bb-fees-empty-after-confirm.json",
+      "captured_at": "2026-10-21 07:15:12 UTC",
+      "bytes": 942,
+      "sha256": "b20c1cf98290ff00eb6afb5cccbf4978dae7a3cf7d2a77ac1ff163bef5a4a18a",
+      "role": "BB期初确认后独立费用记录回读为空。"
+    },
+    {
+      "path": "19-bb-alltypes-funds-empty.json",
+      "captured_at": "2026-10-21 07:15:49 UTC",
+      "bytes": 1074,
+      "sha256": "0538aa1dc8e6f3e1a8bc2e8248c44b5123921c77afa0f18d8037cd6421570e26",
+      "role": "BB客户、全部类型资金流水独立回读为空。"
+    },
+    {
+      "path": "20-qn110-preview.json",
+      "captured_at": "2026-10-21 07:16:28 UTC",
+      "bytes": 4115,
+      "sha256": "06c72e1baae41b46b0497349f078c90030e61b1e25aed1dece37e00cf968b987",
+      "role": "原QN110行同SHA的新预览07:16:25.946Z，Q110/T0/R0/O0/A110，拟全部确认。"
+    },
+    {
+      "path": "21-qn110-confirm-result.json",
+      "captured_at": "2026-10-21 07:16:47 UTC",
+      "bytes": 427,
+      "sha256": "268315195196ca51279367e98fd8dde8246d162643cdecdb1a0c1ccf21034b55",
+      "role": "原QN提交结果110/0；稳定持久化结论另结合22刷新。"
+    },
+    {
+      "path": "22-qn110-reloaded-detail.json",
+      "captured_at": "2026-10-21 07:17:07 UTC",
+      "bytes": 7889,
+      "sha256": "fa07a450c0967c0e3cafba3fc502f372e37305b51029764355a7dc1ffbc6994d",
+      "role": "原QN刷新后110/0，报告1991403427012244866，action2868632417514787017；原110行及保存报告历史保留。"
+    },
+    {
+      "path": "23-qn-quota110-after-confirm.json",
+      "captured_at": "2026-10-21 07:17:25 UTC",
+      "bytes": 3652,
+      "sha256": "0e75f04d4ca2fad5968df78a8e06c0a06dd93c7caba5760595b7512fab940444",
+      "role": "原QN实际Q110/T0/R0/O110/A0、客户确认持有110，O来源总110件、当前仅第一页A001–005。"
+    },
+    {
+      "path": "24-qn-quota-reduction-preview.json",
+      "captured_at": "2026-10-21 07:18:04 UTC",
+      "bytes": 541,
+      "sha256": "782e2dfc08d60c328a3f6addf79cf43e7dc9a9f366e7c3d14526d9e2c4b013d6",
+      "role": "原QN合同配置110→100预览，O110/R0不变，A0→−10，可新增0。"
+    },
+    {
+      "path": "25-qn-quota-reduction-result.json",
+      "captured_at": "2026-10-21 07:18:20 UTC",
+      "bytes": 401,
+      "sha256": "8697220b3e64e47655234c7f5c280e3bc09c10e9b9b3def140917eeef97a9431",
+      "role": "实际Q100/T0/R0/O110，可新增0，同时明确超配10及A−10。"
+    },
+    {
+      "path": "26-qn-negative-quota-complete-form.json",
+      "captured_at": "2026-10-21 07:19:42 UTC",
+      "bytes": 4040,
+      "sha256": "5128b394c5b8632b338332d35cb5253b0566dd934f1d2f0e9ade0ce4de679c39",
+      "role": "原QN完整1件需求表单：业务日、账期候选、原因、有效2元报价齐全；金额准入未启用。"
+    },
+    {
+      "path": "27-qn-demand-rejected.json",
+      "captured_at": "2026-10-21 07:19:57 UTC",
+      "bytes": 1469,
+      "sha256": "388c41190c513143e010f3c623f77d0e3e8c0604d57cf964b57ef2624c2599b0",
+      "role": "实际提交后精确配额不足拒绝，表单保留；不属于缺价或资金准入拦截。"
+    },
+    {
+      "path": "29-qn-demand-list-empty-after-rejection.json",
+      "captured_at": "2026-10-21 07:21:16 UTC",
+      "bytes": 970,
+      "sha256": "449489cb4c6e3ebe56b6c6b29a0ad9357b5cfe40961225c634e1beafea9cdbad",
+      "role": "拒绝后原QN客户筛选需求列表空；只证明无该客户需求，财务和库存另证。"
+    },
+    {
+      "path": "30-qn-quota-post-rejection.json",
+      "captured_at": "2026-10-21 07:21:48 UTC",
+      "bytes": 4073,
+      "sha256": "1f96fc60c229bb2f15a4a7258e9df72aa9dd81426ecb175bd42672dcdd489a26",
+      "role": "拒后原QN实际Q100/T0/R0/O110/A−10、持有110，原0→110与新110→100日志并存。"
+    },
+    {
+      "path": "31-qn-fees-empty.json",
+      "captured_at": "2026-10-21 07:22:24 UTC",
+      "bytes": 939,
+      "sha256": "dd281839cff6d6d0d96dd4bbee95c5507e1bd7cc6e1446cebb296f1d224f7a07",
+      "role": "拒后QN费用记录明确为空。"
+    },
+    {
+      "path": "32-qn-alltype-funds-empty.json",
+      "captured_at": "2026-10-21 07:23:01 UTC",
+      "bytes": 1068,
+      "sha256": "fda492cb159a0e659ad3377f56f0fb89cf4b8ea97facf9c9659b5ec0a1d476b0",
+      "role": "拒后QN全部类型资金流水为空。"
+    },
+    {
+      "path": "33-sp48-restored-input.json",
+      "captured_at": "2026-10-21 07:24:38 UTC",
+      "bytes": 13641,
+      "sha256": "3a2cf26c9093dc05566bc0a294b39c41c107544c44726a3b2698f1743d9e55b0",
+      "role": "SP实际textarea原48行与原TXT逐字节相同，11687字节、原SHA；仅输入，不是保存结果。"
+    },
+    {
+      "path": "34-sp48-report-preview.json",
+      "captured_at": "2026-10-21 07:24:58 UTC",
+      "bytes": 1187,
+      "sha256": "4a3cdc2f335a06b6d0f07d1d7b411eda55bcd8792df95d4ddd3747fe6b1f9f37",
+      "role": "实际为截止字段缺失的前端校验，预览未完成；不计报告保存或存储失败。"
+    },
+    {
+      "path": "35-sp48-valid-original-preview.json",
+      "captured_at": "2026-10-21 07:27:29 UTC",
+      "bytes": 4289,
+      "sha256": "e165dde737bc3ccc1259c04c04c1b36ec3a473236b7033de77fa7bf582234f27",
+      "role": "原SP48行/原03:55Z截止有效预览，Q50/T0/R0/O0/A50，同SHA；尚未保存。"
+    },
+    {
+      "path": "36-sp48-report-saved.json",
+      "captured_at": "2026-10-21 07:27:46 UTC",
+      "bytes": 281,
+      "sha256": "c0b7ae81ff1bd04975b4617f8dc74bdad6b6b71b2492c972469ae115ed307496",
+      "role": "SP首次报告保存，批次2245694768640812531为0/48；不是资产确认。"
+    },
+    {
+      "path": "37-sp48-confirm-preview.json",
+      "captured_at": "2026-10-21 07:28:21 UTC",
+      "bytes": 4085,
+      "sha256": "03c5c72c07d14cad94d7edbc219569123bea26536d8802af9676b2690cd0b41c",
+      "role": "原48件报告确认新预览07:28:17.132Z，同SHA，O不增加。"
+    },
+    {
+      "path": "38-sp48-confirm-result.json",
+      "captured_at": "2026-10-21 07:28:42 UTC",
+      "bytes": 419,
+      "sha256": "0bd8734407e08498040484e97d643e35f1e58596f1501e01fc4971b6a0614b33",
+      "role": "SP48件实际确认结果48/0，持久化结论另结合39刷新。"
+    },
+    {
+      "path": "39-sp48-reloaded-confirmed.json",
+      "captured_at": "2026-10-21 07:29:02 UTC",
+      "bytes": 6362,
+      "sha256": "d56427715fb54b23f108b1a3340ce90c67e6f4df121a4ef02ad11ac21fe29887",
+      "role": "SP同批次刷新48/0，报告8903930321703027364，确认2638561238783958569，独立保存报告3654106612083226446保留；原48键完整。"
+    },
+    {
+      "path": "40-sp48-quota-stock-after-confirm.json",
+      "captured_at": "2026-10-21 07:29:19 UTC",
+      "bytes": 3446,
+      "sha256": "c3b13cd423ff6c5a50b0d4a176194e4ad54f8ab125007bb42402239a3405be34",
+      "role": "SP实际Q50/T0/R0/O0/A50、工厂可发48/酒店持有0/待核0；尚缺有效报价。"
+    },
+    {
+      "path": "41-sp-only-short-rule-draft-form.json",
+      "captured_at": "2026-10-21 07:31:53 UTC",
+      "bytes": 1510,
+      "sha256": "35695de2e0fa698b829d43338c774f449de0fd4531d2a3e1fcdd084be11c535c",
+      "role": "SP专属服务覆盖的完整短备规则草稿表单；允许短备、欠货保留，不自动减费。"
+    },
+    {
+      "path": "42-sp-short-draft-saved.json",
+      "captured_at": "2026-10-21 07:32:11 UTC",
+      "bytes": 1431,
+      "sha256": "8bd77f4f9dcf580b6ea7b33cf29934b384db70477c1a39596417f705ffa1c275",
+      "role": "SP短备版本3215954734887717299仅保存为草稿未生效。"
+    },
+    {
+      "path": "43-sp-short-publish-preview.json",
+      "captured_at": "2026-10-21 07:32:26 UTC",
+      "bytes": 2701,
+      "sha256": "97af06cd7ed2dc95d965487c17c0e74a1d18821250184bfce30db0993cb02215",
+      "role": "短备发布影响预览仅原SP服务一项；尚未发布。"
+    },
+    {
+      "path": "44-sp-short-publish-ready.json",
+      "captured_at": "2026-10-21 07:33:00 UTC",
+      "bytes": 904,
+      "sha256": "b1232a040e8edbf76aece44f4aca2307af76212b67eaa3276d37e69bfb7599e7",
+      "role": "SP短备发布前完整复核表单与确认依据。"
+    },
+    {
+      "path": "45-sp-short-published.json",
+      "captured_at": "2026-10-21 07:33:15 UTC",
+      "bytes": 1443,
+      "sha256": "085367288cffc2fbc9e4d2ba0290460bbdd11ddb1a56b4d0c9a8227c9045cbda",
+      "role": "SP专属短备版本3215954734887717299实际07:33:11.518Z发布；其他既有覆盖版本保留。"
+    },
+    {
+      "path": "46-sp-price2-publish.json",
+      "captured_at": "2026-10-21 07:39:12 UTC",
+      "bytes": 14335,
+      "sha256": "dce843aeb144ef7cffabbb82eba044d0f97bc54df5c40db291c88dd2b5121e2b",
+      "role": "SP2.00实际已发布版1738203391042916449@07:39:08.807Z；预览草稿3328952628884729138是另一ID，分别保留。"
+    },
+    {
+      "path": "47-sp-demand50-ready.json",
+      "captured_at": "2026-10-21 07:40:00 UTC",
+      "bytes": 2645,
+      "sha256": "fa93eddfb45aeea7bfdd8da1fd916a8c0488162a3d80f12c2da629b1971ce47c",
+      "role": "SP原50件完整需求表单，账期、2元、100元、允许短备/欠货保留，尚未提交。"
+    },
+    {
+      "path": "48-sp-demand50-confirmed.json",
+      "captured_at": "2026-10-21 07:40:24 UTC",
+      "bytes": 5597,
+      "sha256": "3f5e9c72363629bee44167c029153c60f553a0790590a5f49137e0d624b67542",
+      "role": "实际为未筛选全部客户首页21条，未显示SP原行；不是单独创建成功证据。"
+    },
+    {
+      "path": "49-sp-demand50-frozen-detail.json",
+      "captured_at": "2026-10-21 07:40:56 UTC",
+      "bytes": 1988,
+      "sha256": "946a560aa7759abf39d0a830baa35ac401135a93353cc024bf971c3e810c93e1",
+      "role": "SP原单1823726686495038162稳定筛选及详情：D50/C0/F0/I0/待发50，净100未付100，账期未归集。"
+    },
+    {
+      "path": "50-sp-original-fee-snapshot-price-change-form.json",
+      "captured_at": "2026-10-21 07:41:21 UTC",
+      "bytes": 1665,
+      "sha256": "ae2115af712f20d1254bab41c686e85ce55a85275af58468395455f17eac9437",
+      "role": "原SP需求展开费用：原费100、原单价2.00、净100；额外undefined不计有效操作。"
+    },
+    {
+      "path": "51-sp-price220-draft.json",
+      "captured_at": "2026-10-21 07:42:01 UTC",
+      "bytes": 2742,
+      "sha256": "a416c6f51e9cee7d2cd2c1180e99aee472402f01a0b4a07351587a08dee5f54f",
+      "role": "2.20新价仅草稿填写；旧2.00发布版仍联到原需求50及冻结费100。"
+    },
+    {
+      "path": "52-sp-price220-published.json",
+      "captured_at": "2026-10-21 07:43:22 UTC",
+      "bytes": 2950,
+      "sha256": "dfeed4d1ba5e7b65e74d398c7092a0951947f6100ac35b3a8f79c39d8ca322c3",
+      "role": "SP2.20新报价实际发布版2040603559273449663@07:43:17.924Z；待发布草稿7650141654075588765另记。"
+    },
+    {
+      "path": "53-sp-new-price-preview-not-submitted.json",
+      "captured_at": "2026-10-21 07:44:00 UTC",
+      "bytes": 4164,
+      "sha256": "901644e453144a4454b876f398b38617cd8d86822ef2808ca28e93f34b7f2ae7",
+      "role": "同SP服务新需求表单预览1件/2.20元、可申请0；主动放弃修改，不计新增需求/费用或实际拒单。"
+    },
+    {
+      "path": "54-sp-original-frozen-rules.json",
+      "captured_at": "2026-10-21 07:44:18 UTC",
+      "bytes": 983,
+      "sha256": "ef6852e6e8143d9dc4e5be74e9fc20c0b61008d9d11e871b65005b4721d12559",
+      "role": "返回原需求仍50件、净100/未付100；原规则折叠，文件名不代表完整冻结规则已展开。"
+    },
+    {
+      "path": "55-sp-original-rules-expanded.json",
+      "captured_at": "2026-10-21 07:44:31 UTC",
+      "bytes": 2207,
+      "sha256": "ec44c7f6194692ac601416972f3e4afe9c7b7bf5b0601ac0ef94aa0e95f569c8",
+      "role": "原单规则真正展开：允许短备欠货保留、交付凭证4176069476241657456、备货3711510520298442876；尚未完成备货，短备数字版本另由61链接补证。"
+    },
+    {
+      "path": "56-sp-pick48-raw-read-preview.json",
+      "captured_at": "2026-10-21 07:46:15 UTC",
+      "bytes": 2571,
+      "sha256": "642552a0fc932814f3e722775839aa54632723be34e04c7651dd253a5911b291",
+      "role": "原48个EPC采集预览；读数准备，不计实际备货。"
+    },
+    {
+      "path": "57-sp-pick48-raw-read-saved.json",
+      "captured_at": "2026-10-21 07:46:34 UTC",
+      "bytes": 14339,
+      "sha256": "0886f6bd13c606872a7fc755aebb3a38c00fb3fb82e0330ff88f38d563eac02e",
+      "role": "原物流会话8038014276703489648，独立采集3117350159529068506；48/48/0原读数，原单实备0/待发50，观察未移动实物。"
+    },
+    {
+      "path": "58-sp-pick-selection-page1.json",
+      "captured_at": "2026-10-21 07:46:51 UTC",
+      "bytes": 3406,
+      "sha256": "a92d8f0f0e253ebb16e847cf32c02aca5610a46ce6d3b439b3e280983d631867",
+      "role": "物流选择第1页A001–010，已选10；选择本身不改变库存。"
+    },
+    {
+      "path": "59-sp-pick-selection-pages2-5.json",
+      "captured_at": "2026-10-21 07:47:29 UTC",
+      "bytes": 13501,
+      "sha256": "a64a445170efdc3d69acdd7bb691f98629fe8bcc69732e69e9e29cc75cf4f29e",
+      "role": "物流选择第2–5页A011–048，累计20/30/40/48，完整后38行与原EPC对应。"
+    },
+    {
+      "path": "60-sp-pick48-actual-preview.json",
+      "captured_at": "2026-10-21 07:47:54 UTC",
+      "bytes": 9439,
+      "sha256": "9ea9b25c13e5b0a2762646da16549d22d1d756ab4fee4b1317aacb738b233bd5",
+      "role": "本次实际集合预览48件/有效48，只预留、不移动位置/新建周转/改原需求配额；尚未满足备货完成。"
+    },
+    {
+      "path": "61-sp-pick48-confirmed.json",
+      "captured_at": "2026-10-21 07:48:13 UTC",
+      "bytes": 4766,
+      "sha256": "0c635e12a6bdd54e48964d81aa83e3bfbbfb90e9f887dc78598e0f0799ebb21d",
+      "role": "原会话实际PICK48，履约6268666695985993915@07:48:08.682Z；实备48/待发50/在途0/实交0，未建装载批次、未确认备货完成；原短备链接3215954734887717299。"
+    },
+    {
+      "path": "62-sp-short-picking-completion.json",
+      "captured_at": "2026-10-21 07:49:07 UTC",
+      "bytes": 1784,
+      "sha256": "5bf96b3f110ee32ba752ac0aefd88536e0140d586a383e2a43d598a5274c760c",
+      "role": "独立备货完成表单：待发/实备/短缺50/48/2，仅记录原集合，原需求/预留/位置/资金保持。"
+    },
+    {
+      "path": "63-sp-completion-certificate-readback.json",
+      "captured_at": "2026-10-21 07:49:27 UTC",
+      "bytes": 1712,
+      "sha256": "01b434962ffbae8e6dd614e5e5887561954baa367df78eae052ed0095af9ce4b",
+      "role": "原需求物流详情实际回读本次完成凭证有效，已备未装48、缺2仍待处理；实装/在途/实交0，未显示凭证ID/完成时间。"
+    },
+    {
+      "path": "65-sp-independent-route.json",
+      "captured_at": "2026-10-21 07:50:51 UTC",
+      "bytes": 1808,
+      "sha256": "ff4aa0985659c56a3603ba359f8ca3d90a137abba7e100107484bd12b5de7642",
+      "role": "SP专属线路UAT13-SP-ROUTE-20261021已在列表启用、仅原SP客户；QM原线路保留，尚非装载。"
+    },
+    {
+      "path": "66-sp-independent-vehicle.json",
+      "captured_at": "2026-10-21 07:51:48 UTC",
+      "bytes": 2654,
+      "sha256": "759e6c5757396de52003675dd07bd837fab95279f0e34c0c5dc668a2a31db189",
+      "role": "第一次车辆提交角色仍观察员，实际权限校验拒绝；弹窗隐藏等待超时不计存储错误或保存成功。"
+    },
+    {
+      "path": "67-sp-independent-vehicle-saved.json",
+      "captured_at": "2026-10-21 07:52:29 UTC",
+      "bytes": 953,
+      "sha256": "fccc35a18a8953b33a34539fa3ed3c501e08b68ddb121037f9e225a0e2c87b02",
+      "role": "后续SP独立车辆已回读列表，启用、关联库位未登记；原QM车辆/车厢保留。"
+    },
+    {
+      "path": "68-sp-vehicle-location-saved.json",
+      "captured_at": "2026-10-21 07:53:56 UTC",
+      "bytes": 1624,
+      "sha256": "52f7a208a19ded42ac85d6846a3948d1a08916d2578abc03f986ff55ad0b38fd",
+      "role": "SP独立车位已保存、同SP车辆、车辆位置用途、启用、资产引用0；QM原车位仍30，资料建立不等于装载。"
+    },
+    {
+      "path": "69-sp-dispatch-task-ready.json",
+      "captured_at": "2026-10-21 07:56:50 UTC",
+      "bytes": 4763,
+      "sha256": "3fa7d33e52c9d997ea53e002767722a743e51e516854fdda550f372e53a6360d",
+      "role": "SP原需求完整配送任务下发依据：原线路/车/具体车厢及版本、司机D1、原凭证/扫描规则；下发不搬库不计费。"
+    },
+    {
+      "path": "70-sp-dispatch-task-issued.json",
+      "captured_at": "2026-10-21 07:57:06 UTC",
+      "bytes": 1206,
+      "sha256": "b39399a26bcfeca15d35115f065446f9fc5c25e970168a238b1242ab65097b77",
+      "role": "原SP任务2982769959401833878已下发执行中，装车/实交/退回/收脏全0；QM原任务装车30仍保留。"
+    },
+    {
+      "path": "71-sp-dispatch-task-detail.json",
+      "captured_at": "2026-10-21 07:57:19 UTC",
+      "bytes": 10392,
+      "sha256": "220eb937170daa6c674ff57c24699f56bc5dc73da3ac35231dde3772ea808a45",
+      "role": "原任务下发版本2356176799157425696、操作2964158245551766360@07:57:01.972Z，原车/线路/规则冻结且原作业事实为空。"
+    },
+    {
+      "path": "72-sp-load-session-created.json",
+      "captured_at": "2026-10-21 07:58:48 UTC",
+      "bytes": 2123,
+      "sha256": "2b867b9b4e2902bdd2e690c116f5f2719ecfdb5d35dd93c35ab0c3fde55e731d",
+      "role": "沿原SP任务创建装车会话4999001972728690169，读数/确认均0；不等于装载。"
+    },
+    {
+      "path": "73-sp-load48-reads-saved.json",
+      "captured_at": "2026-10-21 07:59:34 UTC",
+      "bytes": 7522,
+      "sha256": "de871db057c23ce83ea3a6067c4f3a0e4617413a9482b4a926c52cc4f3516bb2",
+      "role": "原LOAD会话独立保存48/48/0原读数，采集1618972634357488996@07:59:30.809Z，实备48/待发50/在途0/实交0，实际确认履历空。"
+    },
+    {
+      "path": "74-sp-load-selection-all5pages.json",
+      "captured_at": "2026-10-21 08:00:25 UTC",
+      "bytes": 18926,
+      "sha256": "19450dccceef482577cc32834ec58c65d32a927b806fdb3c8e1c898944f84daf",
+      "role": "LOAD五页逐件选择同48原EPC/编码/ID，当前预留原需求，备货完成满足，司机原车原任务固定；只是选择。"
+    },
+    {
+      "path": "75-sp-load48-preview.json",
+      "captured_at": "2026-10-21 08:01:09 UTC",
+      "bytes": 3655,
+      "sha256": "7486c1509a0c25eb0d0b6a10886cd9ab5a3baac82c6addca62b7004be27a4716",
+      "role": "LOAD实际影响预览48已选/48读数/48识别/0未识别，只转在途不增加实交洗次。"
+    },
+    {
+      "path": "76-sp-load48-confirmed.json",
+      "captured_at": "2026-10-21 08:01:28 UTC",
+      "bytes": 6572,
+      "sha256": "3df08c95876605d0a796dbbd1dc0726c07352c9ff4817ca684a57d7796644f65",
+      "role": "实际LOAD操作6747608816746305131@08:01:23.099Z，新装载批次6812748610843032964，原需求50/待发2/在途48/实交0，任务保管48。"
+    },
+    {
+      "path": "77-sp-delivery-session-created.json",
+      "captured_at": "2026-10-21 08:02:44 UTC",
+      "bytes": 2376,
+      "sha256": "39ae936fcc9bbe111e0d4ef03ebfff7394063e398e9bacddc9fba27b5ba2ca58",
+      "role": "原装载批次6812748610843032964建立送达采集6525296938421059304，0/0/0读数，原48件仍未决/在车。"
+    },
+    {
+      "path": "78-sp-delivery48-reads-saved.json",
+      "captured_at": "2026-10-21 08:03:20 UTC",
+      "bytes": 2508,
+      "sha256": "8d6558b1efbb11ce0ddd9347ff263dd89412b4d4bccb50a5099b4cfc753b91d2",
+      "role": "同原批次保存48送达观察，采集版本1120349575839728336，48/48/0，尚未实际交付。"
+    },
+    {
+      "path": "79-sp-delivery-selection-all5pages.json",
+      "captured_at": "2026-10-21 08:04:10 UTC",
+      "bytes": 19574,
+      "sha256": "04946649636e21146399c6a979a90a30f123c50222e07faacd5a682fa2ad92fb",
+      "role": "DELIVER五页原EPC/ID选择完整48，最终显式列出48ID，沿原批次/需求/任务/车位；只是选择。"
+    },
+    {
+      "path": "80-sp-delivery48-preview.json",
+      "captured_at": "2026-10-21 08:04:45 UTC",
+      "bytes": 4238,
+      "sha256": "d5a2a14158b40622b41a8483a2b9f8b188f7cf2acc33ebbfccad5c60ea977e73",
+      "role": "实际交付预览48、原批次将未决0，司机D1及原交付凭证要求；未选件不补足、收脏不抵扣。"
+    },
+    {
+      "path": "81-sp-delivery48-confirmed.json",
+      "captured_at": "2026-10-21 08:05:03 UTC",
+      "bytes": 2379,
+      "sha256": "5c90707924826e7d8ff55a364674336bee472e812b5dca648f74e1bb48a684e1",
+      "role": "实际原批次实装48/实交48/退0/未决0，任务交付48/保管0，原采集48/48/48；具体履约操作ID/UTC待详情，不拿版本号替代。"
+    },
+    {
+      "path": "82-sp-delivery-saved-trace.json",
+      "captured_at": "2026-10-21 08:05:18 UTC",
+      "bytes": 3418,
+      "sha256": "d8a279274678416a02c1a94fa5092fbabdfa64621b38f361bd585816b51b9b67",
+      "role": "再次回读同批次实交48/未决0和原采集；展开前10原读数操作1120349575839728336，仍非具体DELIVER操作ID/UTC。"
+    },
+    {
+      "path": "83-sp-delivered-before-shortfall.json",
+      "captured_at": "2026-10-21 08:05:32 UTC",
+      "bytes": 903,
+      "sha256": "1d11e2f093c5c7129ac20249e738e559c260303778c7f8368d1147506422fafa",
+      "role": "原需求独立回读D50/C0/F48/I0/R2/已备0，净费100/未付100，证明短备完成和交付未自动取消欠2或减费。"
+    },
+    {
+      "path": "84-sp-shortfall-form-after-reconnect.json",
+      "captured_at": "2026-10-21 08:08:41 UTC",
+      "bytes": 1873,
+      "sha256": "0b66e39b7e97685cde7fb0a3e10ff26d5195e7e2cf025e200e70478da762f043",
+      "role": "Chrome恢复后不补发表单仍默认1件/空来源凭证/观察员；可减2、原价2.00，尚未批准。"
+    },
+    {
+      "path": "85-sp-shortfall2-ready.json",
+      "captured_at": "2026-10-21 08:09:12 UTC",
+      "bytes": 2165,
+      "sha256": "469152aabd4da69313fb77d7b9d40c03298390bbdf784c8c78d08fa861d86e4f",
+      "role": "实际完整不补发2件表单，原价2.00减4，独立批准来源键、日2026-10-21、复核员和凭证原因齐全，不执行退款。"
+    },
+    {
+      "path": "86-sp-shortfall2-approved-result.json",
+      "captured_at": "2026-10-21 08:09:26 UTC",
+      "bytes": 981,
+      "sha256": "1d808919e6f3e39173e469bd47bba721ac1054b3b6c156fa6344d1e102b65934",
+      "role": "实际批准后原需求D50/C2/F48/I0/R0/已备0，净96/未付96/已付0；完成历史保留，独立调整记录与配额/资金尚待回读。"
+    },
+    {
+      "path": "87-sp-original-price-and-certificates-after-shortfall.json",
+      "captured_at": "2026-10-21 08:09:56 UTC",
+      "bytes": 4447,
+      "sha256": "6b23ec8e245465020ad5b29caae1bb32fae93ee40d2f686f9d01229742506772",
+      "role": "原单展开原fee100/旧价2/净96未付96，完成凭证5837732232086716386@07:49:00.815Z及50/48/2历史保留；实交凭证08:04:59.278Z，未显式列DELIVER操作ID。"
+    },
+    {
+      "path": "88-sp-operation-log-and-fee-link.json",
+      "captured_at": "2026-10-21 08:10:14 UTC",
+      "bytes": 6393,
+      "sha256": "4b0de5a3b0097fcccc6be81c0ae35aeede8d79c4187357e5267c979300664a39",
+      "role": "原单动作日志明确DELIVER发生/记录08:04:59.278Z及原48交付，PICK/完成/LOAD/创建历史保留；原费用链接5229986381762566678。"
+    },
+    {
+      "path": "89-sp-final-demand-after-reload.json",
+      "captured_at": "2026-10-21 08:10:28 UTC",
+      "bytes": 981,
+      "sha256": "1ab611206b7edfc85b1bb7aba96b1a501595547d40b6522b1546b47d9ff1bfbb",
+      "role": "实际刷新后原需求D50/C2/F48/I0/R0、净96未付96保持。"
+    },
+    {
+      "path": "90-sp-original-charge-adjustment.json",
+      "captured_at": "2026-10-21 08:10:46 UTC",
+      "bytes": 1623,
+      "sha256": "949179e82f4cae479aeef205d8e5164dcd5524df4bad86090aa8cca6f979f54a",
+      "role": "原费用独立财务详情：冻结50×2=100、原报价1738203391042916449、独立批准调整-4/净96，来源键保留；类型SHORTFALL未在字段显式列出。"
+    },
+    {
+      "path": "91-sp-final-account.json",
+      "captured_at": "2026-10-21 08:11:37 UTC",
+      "bytes": 1230,
+      "sha256": "430a3cbbc4f89e9546239858c96ae90c2b2276fef50718cb2d4f28d9b2e60d1a",
+      "role": "SP独立账户：cash/gift/creditTotal/creditUsed/remainingCredit均0，未付96、参考-96；唯一原需求净96/付0/退0/在退0/待退0，金额准入未启用。"
+    },
+    {
+      "path": "92-sp-final-all-funds-empty.json",
+      "captured_at": "2026-10-21 08:11:50 UTC",
+      "bytes": 1072,
+      "sha256": "408aa6e2978f41d280816e8fa321dc1a102e963fb87d03a67742eabdddf5af85",
+      "role": "SP客户、全部类型资金流水为空，独立核对无付款/退款/零额流水。"
+    },
+    {
+      "path": "93-sp-final-quota-and-inventory.json",
+      "captured_at": "2026-10-21 08:12:29 UTC",
+      "bytes": 5101,
+      "sha256": "ca7e1cef560978b68e91a596d73881c1042a1bad35c855e95353b4de8ad71536",
+      "role": "SP最终独立配额/库存实读Q50/T0/R0/O48/A2，可发0/持有48/待核0，待发来源空、O总48仅首5，当前2.20报价保留。"
+    },
+    {
+      "path": "94-bb-comp80-rule-ready.json",
+      "captured_at": "2026-10-21 08:18:07 UTC",
+      "bytes": 9114,
+      "sha256": "beda674beebc6141a833cf155e20610756f4b419dc38edf5e1449c3f44cb4ff8",
+      "role": "BB原协议80元赔偿规则完整表单：标识UAT13-BB-COMP80-20261021-V1、生效2026-10-21、启用/复核依据；发布不等于赔偿费用。"
+    },
+    {
+      "path": "95-bb-comp80-rule-published.json",
+      "captured_at": "2026-10-21 08:18:21 UTC",
+      "bytes": 7935,
+      "sha256": "d3ddffc78ca6dfdadf420982f464cf9105b65babfe0b732bc4de195928838b0e",
+      "role": "BB80元规则已回读发布列表，原其他两规则保留；本机16:18:18发布，尚非原案赔偿/付款。"
+    },
+    {
+      "path": "96-bb-z-loss-report-saved.json",
+      "captured_at": "2026-10-21 08:19:30 UTC",
+      "bytes": 20475,
+      "sha256": "0b4a07313fd5cbbcdf9e63a63424835a30936a9d27b8846023e78ed13237aa47",
+      "role": "原Z资产/EPC登记独立疑失案5290285426565609218，来源UAT13-BB-Z-LOSS-20261021，责任/费用/找回均未处理。"
+    },
+    {
+      "path": "97-bb-z-loss-confirmed.json",
+      "captured_at": "2026-10-21 08:20:31 UTC",
+      "bytes": 28188,
+      "sha256": "537f839e969b1da8ec2b45d54da756f3676240f2ff924b373434a4fd7aeed246",
+      "role": "同Z原案实际确认丢失08:20:26.531Z/op6332511405823448547，原报告08:19:25.779Z/op3370889456545841670保留，原轮8717900689830883044，HOTEL/最后可信、未判赔。"
+    },
+    {
+      "path": "98-bb-z-liability-saved.json",
+      "captured_at": "2026-10-21 08:21:52 UTC",
+      "bytes": 8490,
+      "sha256": "4d0ed68a7895e4aac48b33ba6e00f8a1021a6d8c660ba22475c574a7c63eba04",
+      "role": "Z原案独立责任依据实际登记；责任ZR1358414795935288218，尚无费用，不等于付款。"
+    },
+    {
+      "path": "99-bb-z-comp80-created.json",
+      "captured_at": "2026-10-21 08:22:39 UTC",
+      "bytes": 12548,
+      "sha256": "95eb2a38e3eaa10fd9028678e8c9b50e70a6fbfe7ad9fdfb742548e05cf7aa05",
+      "role": "Z按80元原规则3062414267681263234实际生成唯一PC7952278439096552389及charge3143137893110626554；原/净80、未付80、已结算0。"
+    },
+    {
+      "path": "100-bb-f-loss-report-saved.json",
+      "captured_at": "2026-10-21 08:23:47 UTC",
+      "bytes": 8815,
+      "sha256": "8274b668eecc8002606cfd53880af7eb0ccf0e222d5229d650ed0e56aaf975da",
+      "role": "F原资产及原周转独立疑失报告保存，YS5566302812031245222；尚未确认丢失/责任/费用。"
+    },
+    {
+      "path": "101-bb-f-loss-confirmed.json",
+      "captured_at": "2026-10-21 08:24:34 UTC",
+      "bytes": 10036,
+      "sha256": "c60ce53b4928d9642755e5cc551f4c9be7566ce441fb999591594bb4699eab2c",
+      "role": "F同一原案实际确认丢失，08:24:29.972Z/op1718045709892774025；HOTEL保持、LAST_KNOWN、NORMAL；责任/费用另行执行。"
+    },
+    {
+      "path": "102-bb-f-liability-saved.json",
+      "captured_at": "2026-10-21 08:25:23 UTC",
+      "bytes": 8430,
+      "sha256": "939ce9bc7b3d9ca31715b93522f411be6da4b65d1319d5a34762e16e28a59083",
+      "role": "F同一原案独立责任ZR7416442018069988788登记，08:25:19.056Z/op5847321191446288687；尚未计费。"
+    },
+    {
+      "path": "103-bb-f-comp80-created.json",
+      "captured_at": "2026-10-21 08:26:01 UTC",
+      "bytes": 12383,
+      "sha256": "2a0a9f868c37fbcc11395f37f35d5243148a966a074b5e1ab8893dfd38e054a2",
+      "role": "F实际唯一赔偿PC1762070262510353080/charge5192029178264820541，冻结原80规则，原净80/未付80/已结算0；不等于付款。"
+    },
+    {
+      "path": "104-bb-comp003-rule-published.json",
+      "captured_at": "2026-10-21 08:27:11 UTC",
+      "bytes": 11230,
+      "sha256": "e4283800c3791689c1488b5bcc052318ec9f7403a668e7928f96cc28ffbc2d0f",
+      "role": "同一BB服务追加0.03元启用赔偿规则，发布时间本机16:27:07，原80元版保留；尚非H计费。"
+    },
+    {
+      "path": "105-bb-h-loss-report-saved.json",
+      "captured_at": "2026-10-21 08:28:03 UTC",
+      "bytes": 8813,
+      "sha256": "be4378063c176f7b9ce4385ccca3993ad141fe08ae3c161096d0ab224c8bf8ba",
+      "role": "H原资产2188837326712989629/原轮8455683183665372572独立疑失案6883298937133642038，观察0、责任/费用未有。"
+    },
+    {
+      "path": "106-bb-h-loss-confirmed.json",
+      "captured_at": "2026-10-21 08:28:47 UTC",
+      "bytes": 10002,
+      "sha256": "e3db304d9be2f72ae4b22b6634d43ed100a5d94ae54a68a2167631de5547082a",
+      "role": "H同原案实际确认丢失08:28:42.180Z/op3942471725953372683；HOTEL保持、LAST_KNOWN、NORMAL；原报告日志另保留。"
+    },
+    {
+      "path": "107-bb-h-liability-saved.json",
+      "captured_at": "2026-10-21 08:29:41 UTC",
+      "bytes": 8423,
+      "sha256": "81756d4cc0641d05ec2762135afed8121a16dbcbed8a0d0a302abdce5915d26d",
+      "role": "H原案独立责任ZR6368628098852080986登记，08:29:36.674Z/op2467695509788814732；仍尚未计费。"
+    },
+    {
+      "path": "108-bb-h-comp003-created.json",
+      "captured_at": "2026-10-21 08:30:22 UTC",
+      "bytes": 12354,
+      "sha256": "e6eed2bb27b26ef09cfcdf1299bb9640e2423dff16647bdb49552807a806577e",
+      "role": "H实际唯一赔偿PC5439839868304351982/charge6160121873929083014，0.03元规则数字版4284324996932263820；原净0.03/未付0.03/已结算0。"
+    },
+    {
+      "path": "109-bb-bill16003-ready.json",
+      "captured_at": "2026-10-21 08:31:45 UTC",
+      "bytes": 2823,
+      "sha256": "8545e8e1b73fd6ff95b1448afa08396090043a25108069feb2187f44af907ab0",
+      "role": "BB账单归集完整预览，仅Z/F/H三个原PC费用80/80/0.03，账期2026-10-21至22（结束不含），未保存。"
+    },
+    {
+      "path": "110-bb-bill16003-draft-saved.json",
+      "captured_at": "2026-10-21 08:31:58 UTC",
+      "bytes": 5176,
+      "sha256": "272172d0373714217906bb4c5f7c1d6c1315a89b00f436667b0dd5577123b9db",
+      "role": "BB账单5722787052786643611第1版草稿实际保存，160.03/净结算0/未付160.03，客户筛选仅1条。"
+    },
+    {
+      "path": "111-bb-bill16003-approved.json",
+      "captured_at": "2026-10-21 08:33:04 UTC",
+      "bytes": 12593,
+      "sha256": "f1eab1d898eb4face5b8bfa59d7038eabed77cd6d24911121c872e3649547071",
+      "role": "原账单第1版6166681581384896646实际核准08:32:59.247Z；三原fee链接与金额一致，冻结160.03，当前160.03，未付款/关账/导出。"
+    },
+    {
+      "path": "112-bb-account-before-cash.json",
+      "captured_at": "2026-10-21 08:33:16 UTC",
+      "bytes": 2263,
+      "sha256": "1519bdc832a755f45d0af08178d1d323089b57a7cd39a0fa51ba483857ace0aa",
+      "role": "仅租洗页面加载中，不作为现金或账户稳定回读。"
+    },
+    {
+      "path": "113-bb-account-zero-cash-readback.json",
+      "captured_at": "2026-10-21 08:33:28 UTC",
+      "bytes": 6244,
+      "sha256": "60aa11b24f0bf31232dda0a851c0c163a9f1a5fda20bc58aa0bba5c45b6860df",
+      "role": "BB资金账户真实基线：现金/赠送/授信/信用已用/剩余信用0，未付160.03/参考-160.03，三原费用均未结算。"
+    },
+    {
+      "path": "114-bb-cash8001-application-saved.json",
+      "captured_at": "2026-10-21 08:34:18 UTC",
+      "bytes": 7885,
+      "sha256": "c996fc5a4ad9aaa3b8a2a39aaf4445471aacc1ab5c0c83170201bb472e44a2b5",
+      "role": "完整80.01现金充值申请表单及返回原账户现金仍0；申请号/状态未直接显示，持久化结果由115补证，不计到账。"
+    },
+    {
+      "path": "115-bb-cash8001-approved.json",
+      "captured_at": "2026-10-21 08:35:24 UTC",
+      "bytes": 4398,
+      "sha256": "e26b07f1058352e0aea3f765f96538d51644fd258ddc19e1cc130a614be9d371",
+      "role": "原来源UAT13-BB-CASH-20261021-8001申请5303786345895391004独立批准，现金80.01，按钮禁用；审批UTC/流水ID未单列。"
+    },
+    {
+      "path": "116-bb-account-cash8001-readback.json",
+      "captured_at": "2026-10-21 08:35:38 UTC",
+      "bytes": 6246,
+      "sha256": "2ca25733ca1103a666d6cbb6a47f514270a06e62d0227d14e3456a749c3620ce",
+      "role": "独立账户实读现金80.01，赠送/信用各0，原三费仍未付160.03，充值未计作费用结算。"
+    },
+    {
+      "path": "117-bb-f-pay80-saved.json",
+      "captured_at": "2026-10-21 08:36:27 UTC",
+      "bytes": 7869,
+      "sha256": "4f594861baf2a99214e8e0610d37ab06bc23ccca190d0f865218a8f5850b66b7",
+      "role": "F原fee5192029178264820541实际现金付款80，F已结算80/未付0，现金80.01→0.01、总未付80.03；支付ID/UTC未单列。"
+    },
+    {
+      "path": "118-bb-f-found-observation-saved.json",
+      "captured_at": "2026-10-21 08:37:33 UTC",
+      "bytes": 11899,
+      "sha256": "b0c44b5f7f98e2dc4a104a5505cecbcec3079aed3ff7b218f312659441f14b03",
+      "role": "F同原案登记有效EPC找回观察08:37:29.220Z/op1300154789464258651；仍已确认丢失，未复核/回购/退款。"
+    },
+    {
+      "path": "119-bb-f-found-reviewed.json",
+      "captured_at": "2026-10-21 08:38:35 UTC",
+      "bytes": 12968,
+      "sha256": "d58c3cd61021773ad211bd0c8a8c89d6cee75635053dca66da72a92ca93e8144",
+      "role": "F同原案可信观察1452074208663691837实际复核08:38:31.138Z/op7128350868334073150；已复核找回、质量HOLD，HOTEL/LAST_KNOWN保持。"
+    },
+    {
+      "path": "120-bb-buyback100-rule-published.json",
+      "captured_at": "2026-10-21 08:40:30 UTC",
+      "bytes": 10528,
+      "sha256": "657a2bedb76a56f5dde49fa364ddee76e70267c4547f6581334f16cfb57fa096",
+      "role": "BB原服务100%有效应赔基数比例规则实际发布，启用且表单明确保持原产权；尚非F回购执行或80退款。"
+    },
+    {
+      "path": "121-bb-f-buyback100-created.json",
+      "captured_at": "2026-10-21 08:41:37 UTC",
+      "bytes": 10969,
+      "sha256": "c275146cc5c9fbd374d5608f80af242de8707fe904c9c2c6742c231a96e77770",
+      "role": "F实际HG5341550227557580456@08:41:33.048Z/op1697118119100115426；冻结100% HALF_UP、B80/N80/U0/V80，冲0/权益80，尚未退款。"
+    },
+    {
+      "path": "122-bb-f-entitlement-cash-before-refund.json",
+      "captured_at": "2026-10-21 08:42:14 UTC",
+      "bytes": 8661,
+      "sha256": "8ce6804dc281e2b1a7020611478dcd795ecc1fcf1e0d4b849717d7a22801ea50",
+      "role": "F原charge退款权益来源BUYBACK:1762070262510353080明确80/退0/在退0；现金仍0.01，证实权益不提前加现金。"
+    },
+    {
+      "path": "123-bb-f-refund80-succeeded.json",
+      "captured_at": "2026-10-21 08:43:06 UTC",
+      "bytes": 5825,
+      "sha256": "a21ef35054b73d2c0aed94574b9d923235c6c03a236ebc005e7938c14dcb14a2",
+      "role": "F原权益完整80退款表单，动作键UAT13-BB-F-REFUND80-20261021，原现金支付分摊2470754576887879070；实际TK8985884287802345795已成功、现金80已生效，UTC待补。"
+    },
+    {
+      "path": "124-bb-f-refund80-receipt.json",
+      "captured_at": "2026-10-21 08:43:20 UTC",
+      "bytes": 3562,
+      "sha256": "7d5ca6d421ef0b361cafeddcc693865c0165666e66da73e3e939767272a0c287",
+      "role": "F同原TK只读成功回执，记录UTC08:43:03.107Z，原支付及本来源均80已退/在退0、新申请上限0；未重复退款。"
+    },
+    {
+      "path": "125-bb-f-refund-account-cash8001.json",
+      "captured_at": "2026-10-21 08:43:44 UTC",
+      "bytes": 6253,
+      "sha256": "3d3f381bade4b9bb553e4d5628db39809e1e4d018e9b0cdb03882cc594cfea1a",
+      "role": "F退款后独立账户现金80.01，F净费0/历史已结算80/已退80/未付及在退待退0；Z/H未付80.03。"
+    },
+    {
+      "path": "126-bb-h-pay003-saved.json",
+      "captured_at": "2026-10-21 08:44:19 UTC",
+      "bytes": 7875,
+      "sha256": "31aab0343296e0018bd3df0216452f0d579104df7a6de35878554efeafcb7049",
+      "role": "H原fee6160121873929083014实际现金付款0.03，H已结算0.03/未付0，现金79.98，总未付80；尚未找回/50%回购。"
+    },
+    {
+      "path": "127-bb-h-found-observation-saved.json",
+      "captured_at": "2026-10-21 08:48:47 UTC",
+      "bytes": 31470,
+      "sha256": "bc0ac5dcdb4c316ca4f05f310d0849f0dd32b9886c43b72ace1ef4226da51186",
+      "role": "H同原案已保存1条有效EPC找回观察，08:48:43.817Z/op1410383266715446025；仍已确认丢失，未复核/回购。"
+    },
+    {
+      "path": "128-bb-h-found-review-saved.json",
+      "captured_at": "2026-10-21 08:49:43 UTC",
+      "bytes": 10539,
+      "sha256": "f52a3d69267daafedc6b24cd4a6d0d5dcddebac6284253dad83ed65669f31b6b",
+      "role": "H同案观察3302910943063807493已复核，08:49:40.143Z/op7278201761147786031；质量HOLD，HOTEL/LAST_KNOWN保持，未回购或退款。"
+    },
+    {
+      "path": "129-bb-buyback50-rule-published.json",
+      "captured_at": "2026-10-21 08:51:01 UTC",
+      "bytes": 8726,
+      "sha256": "16810a80e006ad79ceb1648dd0fea42e9f6000af48d72526b72e650b1da8dc83",
+      "role": "BB原服务50%有效应赔基数比例规则实际发布，启用；100%旧版仍列，不据此代替原F HG冻结回读。"
+    },
+    {
+      "path": "130-bb-h-hg002-saved.json",
+      "captured_at": "2026-10-21 08:51:54 UTC",
+      "bytes": 7475,
+      "sha256": "0f43df539c27655296aaddfdb3e80dd8b8d3c23b01931e1356ee1870aa0c5bf1",
+      "role": "H实际HG4622176296488662988@08:51:49.620Z/op1982414324432819827；冻结50% HALF_UP、B0.03/N0.03/U0/V0.02、冲0/权益0.02，原费净0.01，未退款。"
+    },
+    {
+      "path": "131-bb-h-entitlement002-before-refund.json",
+      "captured_at": "2026-10-21 08:52:08 UTC",
+      "bytes": 2503,
+      "sha256": "364d407e48784bc0b0ff04f9b85af34773f362fe6ad07a7a7f9966d92446771c",
+      "role": "H原fee6160121873929083014独立权益来源BUYBACK:5439839868304351982，批准0.02/退0/在退0/上限0.02；无现金账户回读。"
+    },
+    {
+      "path": "132-bb-h-refund002-success.json",
+      "captured_at": "2026-10-21 08:52:52 UTC",
+      "bytes": 2583,
+      "sha256": "8e3b6fddd647604181f3c9ac21874932e6deeb6ca087c654fbc1c475b4bc833d",
+      "role": "H原费范围实际TK7590169477101213192、动作键UAT13-BB-H-REFUND002-20261021，内部钱包0.02已成功、现金已生效；未包含申请表单。"
+    },
+    {
+      "path": "133-bb-h-refund002-receipt.json",
+      "captured_at": "2026-10-21 08:53:08 UTC",
+      "bytes": 3632,
+      "sha256": "9bc51e26c153015ddff8cbccea2b5312ec278ca38d0b16f8358019686bf8bf08",
+      "role": "H同原TK只读成功回执，记录UTC08:52:48.877Z，原现金分摊2317915104321892328；P0.03/退0.02/在退0，来源限0.02已尽、新申请0。"
+    },
+    {
+      "path": "134-bb-h-refund-account-cash80.json",
+      "captured_at": "2026-10-21 08:53:23 UTC",
+      "bytes": 6264,
+      "sha256": "9b86a784ad2bcf29e63a72199792a05ad131efe6cddf9e729335d4da4088253d",
+      "role": "H退款后独立账户现金80.00，H净0.01/历史付0.03/退0.02/未付在退待退0；Z仍未付80。"
+    },
+    {
+      "path": "135-bb-z-pay80-saved.json",
+      "captured_at": "2026-10-21 08:54:06 UTC",
+      "bytes": 6359,
+      "sha256": "175a62d8d4cab0de007e754ce89f3327ad35ed0306e783afb87955192b1c607f",
+      "role": "Z原fee3143137893110626554实际已结算80/未付0，原账户现金80→0，所有账户余额/未付/参考0；Z表单和支付流水ID未在本证据列出。"
+    },
+    {
+      "path": "136-bb-z-found-observation-saved.json",
+      "captured_at": "2026-10-21 08:54:50 UTC",
+      "bytes": 9217,
+      "sha256": "90f521e305d0857e8249d4b560a853d46c457aefc035506d72f50379df4eb8dd",
+      "role": "Z同原案实际找回观察08:54:46.759Z/op4125987618945296186；仍已确认丢失，HOTEL/LAST_KNOWN/NORMAL保持。"
+    },
+    {
+      "path": "137-bb-z-found-review-saved.json",
+      "captured_at": "2026-10-21 08:55:29 UTC",
+      "bytes": 10629,
+      "sha256": "bea8cee93b9a80fd5730aa57e5961070a349fac841574e409f49478b76e1d9b2",
+      "role": "Z同案实际复核08:55:26.165Z/op5640947781985549645，引用观察4339204982823779472；已复核找回、质量HOLD，原位置和原轮保持。"
+    },
+    {
+      "path": "138-bb-buyback0-rule-published.json",
+      "captured_at": "2026-10-21 08:56:24 UTC",
+      "bytes": 9471,
+      "sha256": "f966d44753f16be02d1d2438acfa88b3f82aa44babd382796204076ed184ee2e",
+      "role": "BB明确0%V3实际发布列表，50%V2和100%V1保留；未单列数字版本ID或发布UTC。"
+    },
+    {
+      "path": "139-bb-z-hg0-saved.json",
+      "captured_at": "2026-10-21 08:57:05 UTC",
+      "bytes": 7513,
+      "sha256": "0f5bc4963842b5c28668860224c9231349fcb406abeaf7682ff937c46b55a950",
+      "role": "Z原HG2658206505136308850实际保存，明确0%、B80/N80/U0/V0，权益0；原净费/净结算80，系统提示无可退权益。"
+    },
+    {
+      "path": "140-bb-z-fee-no-adjustment-after-hg0.json",
+      "captured_at": "2026-10-21 08:57:20 UTC",
+      "bytes": 3839,
+      "sha256": "572c9996b2c96e9f96b9516e032451e135e901d182fb44dfe987ebb156bdc8fe",
+      "role": "Z原费3143137893110626554原额80/调整0/净80/付80/未付0，批准调整表空，原规则与记录时刻保持。"
+    },
+    {
+      "path": "141-bb-z-no-entitlement-no-refund.json",
+      "captured_at": "2026-10-21 08:57:38 UTC",
+      "bytes": 3641,
+      "sha256": "d5335283f325e7bde433da60f0a53cf6ad200b936b143267ba92a7f995459647",
+      "role": "同Z原费分别读可退权益与退款记录，前者无权益、后者空，链接回原HG0。"
+    },
+    {
+      "path": "142-bb-final-account-reload.json",
+      "captured_at": "2026-10-21 08:58:10 UTC",
+      "bytes": 6261,
+      "sha256": "b6c09869955a6ea7edc463f2fbcabe26cd54d8e5b5bfafd87d92bf2b21518a4e",
+      "role": "原BB账户刷新后现金/赠送/信用/未付/参考全部0，原Z/F/H三费净80/0/0.01，历史付80/80/0.03、退0/80/0.02。"
+    },
+    {
+      "path": "143-bb-final-alltype-transactions.json",
+      "captured_at": "2026-10-21 08:59:02 UTC",
+      "bytes": 7888,
+      "sha256": "3fc912d475f52f3678114ad3a2ae58d49bdec0c8c73e026757ad0fa87994e0ab",
+      "role": "BB+全部类型仅6条已确认流水，本页全部显示：现金充值1、费用结算3、退款2，无零额资金。"
+    },
+    {
+      "path": "144-bb-z-payment-transaction-detail.json",
+      "captured_at": "2026-10-21 08:59:22 UTC",
+      "bytes": 2732,
+      "sha256": "98d8c3c37796c0b9f710b9d57a73adfee92b1973fa4b020432a491253d7cf21c",
+      "role": "Z原付款流水8192352065470347943详情，现金80/-80/0，原fee与同核准账单、原现金分摊6236326851170015895。"
+    },
+    {
+      "path": "145-bb-h-refund-payment-transactions.json",
+      "captured_at": "2026-10-21 08:59:46 UTC",
+      "bytes": 5472,
+      "sha256": "eecc5f153bc2ce882231ae8565a04d2dd3a87394c98d6a3a7956409b0f0e251e",
+      "role": "H退款6822383195667945265及付款3227395147531642935逐条详情，现金79.98/+0.02/80、80.01/-0.03/79.98，原TK/fee/账单及分摊一致。"
+    },
+    {
+      "path": "146-bb-f-and-recharge-transactions.json",
+      "captured_at": "2026-10-21 09:00:17 UTC",
+      "bytes": 7716,
+      "sha256": "5992255a4a9593ec5b087e38b79ff5508b354171f3939d744463802279db5b75",
+      "role": "F退款2975925002612598167、付款2507813720437047540、充值4019706134223902965逐条详情，原来源和现金前后值齐全。"
+    },
+    {
+      "path": "147-bb-final-approved-bill.json",
+      "captured_at": "2026-10-21 09:00:33 UTC",
+      "bytes": 12708,
+      "sha256": "3139e0c4d3992ea75ed44a73420f4bd8f807b1288025e00a3a103b7e413170d3",
+      "role": "原核准账单第1版160.03冻结不变，当前净80.01、付160.03、退80.02、未付/在退/待退0；仅F/H两独立减项，未关账未导出。"
+    },
+    {
+      "path": "148-bb-final-bill-current-view.json",
+      "captured_at": "2026-10-21 09:01:01 UTC",
+      "bytes": 12820,
+      "sha256": "0f288fba8d18182a3dd5e776d546b5f726f4215842058d3cd358ed25eaac57d8",
+      "role": "同原核准账单切当前调整视图，逐行Z80/0/80/付80/退0、F80/-80/0/付80/退80、H.03/-.02/.01/付.03/退.02，当前净80.01；原冻结160.03保持。"
+    },
+    {
+      "path": "149-bb-f-h-frozen-hg-after-refunds-and-v3.json",
+      "captured_at": "2026-10-21 09:01:21 UTC",
+      "bytes": 15588,
+      "sha256": "b6c7018960f3bc41ddf467bc15d2cd2a4fe368ba7fdc00d991ec77d95d3f613b",
+      "role": "在0%V3及两退款后只读原F/H HG：100%V1 B80/N80/U0/V80与50%V2 B.03/N.03/U0/V.02完全保留；当前净结算分别0/.01。"
+    },
+    {
+      "path": "150-bb-three-assets-final-facts.json",
+      "captured_at": "2026-10-21 09:01:50 UTC",
+      "bytes": 49976,
+      "sha256": "29acc060c5e214d0fc7502508cd04fe688173c182ea140fb0c871a4cd73c5fe5",
+      "role": "逐一读取原Z/F/H完整当前资料及原轮；身份/EPC/池/工厂产权/洗次12保持，待验、位置待核，各O1、原轮未释放；关联历史日志只第一页。"
+    },
+    {
+      "path": "151-bb-final-quota-inventory.json",
+      "captured_at": "2026-10-21 09:02:11 UTC",
+      "bytes": 11338,
+      "sha256": "a3ab314a708bafc5dc96c9cc0336512273b1826a531712463d3e2ae1424e6442",
+      "role": "最终BB Q3/T0/R0/O3/A0，可发0/客户确认持有0/位置待核3，3条原O来源全部可见未释放，独立责任处置空。"
+    },
+    {
+      "path": "152-bb-final-three-hg-list.json",
+      "captured_at": "2026-10-21 09:02:30 UTC",
+      "bytes": 11108,
+      "sha256": "3955c845d499c511f4f4defc64f084a7fd6a358fab7be28cee7647d6cba24045",
+      "role": "业务最终截止09:02:30Z，UAT13-BB筛选仅3原HG，H退.02、F退80完成、Z零额处置无权益，原比例与原案/费用链接保持。"
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "reviews/storage-source-compare-f7-to-9431b91.json",
+      "bytes": 2977,
+      "sha256": "d54d8ca322a7decd3ed1520f739a110644266bc338e3575501ef6c198a334838",
+      "role": "GitHub完整SHA比较原回包；证明代码差异，不证明原Chrome运行版本。"
+    },
+    {
+      "path": "reviews/storage-github-9431b91-commit-readback.json",
+      "bytes": 6628,
+      "sha256": "c12483fdb28c4599e45bade92af81b9690b79eb87d802820d1024350c66a3942",
+      "role": "独立完整提交API回读，SHA、parent、tree一致；不是原Chrome运行版本证明。"
+    },
+    {
+      "path": "reviews/storage-github-9431b91-tree-readback.json",
+      "bytes": 429754,
+      "sha256": "4045204bd68681d27e655373c21c5ff67c74060b7b9c3e8faf1d3ede787dfcfd",
+      "role": "完整9431树原回包，truncated=false；源码依据，不证明运行版本。"
+    },
+    {
+      "path": "reviews/storage-9431b91-save-path-blob-check.json",
+      "bytes": 1992,
+      "sha256": "e0beeb094d775fbac0a10885de1eb0dbd2981a14d76a38fddeeb15204d98c515",
+      "role": "独立保存路径七个文件Git blob比对全部匹配。"
+    },
+    {
+      "path": "reviews/storage-9431b91-save-path-review.md",
+      "bytes": 7133,
+      "sha256": "4e01b8650eaf06fe33d348b44f04b7b6dcda8236c5b6e4ebc6c895c68d8c0927",
+      "role": "只读诊断截至03–05，后续BB成功由10–17补证；没有操作浏览器或重跑代码门禁。"
+    }
+  ],
+  "review_evidence": [
+    {
+      "path": "reviews/qn-postrelease-independent-review.json",
+      "bytes": 4927,
+      "sha256": "ecaa15af5f9b81920d5a0bfe18cf71d15cfca6d1032191ce8621b88393e3b343",
+      "role": "独立读取20–32及原QN TXT，11项证据断言成立；明确来源表只首5，全部键来自日志。"
+    },
+    {
+      "path": "reviews/sp-opening-postrelease-independent-review.json",
+      "bytes": 3827,
+      "sha256": "8811c77a8005da3c108c0ab3929b55a7c6d53d9fda2da65463df262dfeecd6b3",
+      "role": "SP33–40独立只读复核9证据断言成立；不包含随后短备/资金链。"
+    },
+    {
+      "path": "reviews/section24-remote-spec-file-readback.json",
+      "bytes": 1398,
+      "sha256": "8d8907bb2aa8df05c52200d8aac8441490fcf03481bb0a03c299583d0431da08",
+      "role": "本轮只读原规范分支主记录Git blob仍c8d34a2d...；首行限量回包，不声称本次读取到分支HEAD。"
+    },
+    {
+      "path": "reviews/section24-stage45-peer-review.json",
+      "bytes": 974,
+      "sha256": "b6be929d2bbcc21a283b33cf6abccbfe037c5d255dbff6e6639853c5d356604a",
+      "role": "独立只读审查草稿截至45，记录当时草稿SHA；不覆盖以后资金链或最终全文。"
+    },
+    {
+      "path": "reviews/sp-asset-identity-review.json",
+      "bytes": 44378,
+      "sha256": "0522826eda57d1e2e3a9ba2e9072ca7356d5d570d7661f9a2e1aa9435c24a179",
+      "role": "截至61的29项独立证据断言；五页48个原EPC/编码/ID与原会话核对，并保留稳定三元组指纹供后续LOAD/DELIVER比对，不涵盖62以后。"
+    },
+    {
+      "path": "reviews/sp-logistics-incremental-review.json",
+      "bytes": 100002,
+      "sha256": "1a518e6a7b9ea6f989288dbaa50bb3a704aa8d7f7847ae6499d3c2bdd6121c4c",
+      "role": "固定截至93的69项独立证据断言全部成立，33份源指纹，原48身份贯穿PICK/LOAD/DELIVER，终态配额/费用/资金收口；不含BB或任务结案。"
+    },
+    {
+      "path": "reviews/section24-stage93-peer-review.json",
+      "bytes": 1203,
+      "sha256": "9dc28efc2fdcd7f9c3bfe4799624587478b7660ed688ba8d7273c049be111b92",
+      "role": "独立只读全文审查第24节草稿截至93，当时draft SHA固定；无修正，后续BB与最终追加未覆盖。"
+    },
+    {
+      "path": "reviews/section24-late-remote-spec-file-readback.json",
+      "bytes": 1263,
+      "sha256": "2e21b551a96b138ac14d8d6682446cd9c4c08f0d22272390ddf1612ac02916c4",
+      "role": "08:54:26 UTC再次只读原spec分支主记录，整文件Git blob仍c8d34a2d...；只请求首行，不声称全文重取或分支HEAD。"
+    },
+    {
+      "path": "reviews/bb-postrelease-independent-review.json",
+      "bytes": 129382,
+      "sha256": "377164b9ed953a67f7ea20436c409acc33fd210db1a42999558fefd98867c522",
+      "role": "固定截止152的BB原三件独立复核，122项证据/定点核算全部成立、65份JSON和原BB夹具指纹；不是Formal70或自动化测试数量。"
+    },
+    {
+      "path": "reviews/section24-final-peer-review.json",
+      "bytes": 38799,
+      "sha256": "e348ecc2f248671b0106f31ccb2f55c50008e04d84241388baeea6a92a53b9e2",
+      "role": "最终第24节只读同行审查：事实范围无更正，原598300字节前缀与其余70规范文件保护通过；未重新操作浏览器或工程测试。"
+    },
+    {
+      "path": "reviews/section24-document-gates.json",
+      "bytes": 18408,
+      "sha256": "cf1eee3eb646e93f39dce35dc1d474f7c32a3aa819fc5b648072f41177ada7b6",
+      "role": "第24节规范门禁、原前缀及其他70文件保护、两份纯追加补丁正反向检查及实际应用结果。"
+    },
+    {
+      "path": "reviews/section24-document-check.log",
+      "bytes": 390,
+      "sha256": "7e48b7a2c3992fb140d9afb77c08087ee3ad536439d83a3dced7e255b14d6bf3",
+      "role": "现有文档门禁实际退出0日志：55MD/911链接/123范围/24数值例，Formal70未执行。"
+    },
+    {
+      "path": "reviews/section24-git-diff-check.log",
+      "bytes": 2178,
+      "sha256": "2f7e3ba3b5c6817f427d26861c1ae8cb39e46a24e87c07de304745a92ac3b191",
+      "role": "临时本地Git索引的两份单路径纯追加补丁检查与应用日志，无提交或远端。"
+    }
+  ],
+  "checkpoint_evidence": [
+    {
+      "path": "checkpoints/sp-completed-at93.json",
+      "bytes": 30697,
+      "sha256": "4889e2d8ae5823d140acac9004428c7cf5e792ff35fef07584e839e2b71b06b6",
+      "role": "SP原50/48短备不补发专项截至93稳定完成断点；含本阶段原证据指纹与两份独立复核，非正式70整例状态修改。"
+    },
+    {
+      "path": "checkpoints/uat13-completed-at152.json",
+      "bytes": 94956,
+      "sha256": "8042a8faecfc5d8d2bcbb7d329c4bdae2386072c1ee9f5f43b5206931a6a91c4",
+      "role": "最终152业务截止三专项完成检查点，含原对象/最终金额/148份页面JSON及3夹具指纹；固定供只读核对。"
+    }
+  ],
+  "plan_evidence": [
+    {
+      "path": "plans/BB3-payment-found-buyback-refund-ui-checklist.md",
+      "bytes": 16330,
+      "sha256": "6c72de27a5cf49bd53b9a52ff9cf8d0e31565cd2db210adba1fa513a0ff463a7",
+      "role": "独立只读源码执行检查表，17次付款/找回/回购/退款保存的UI字段与预期；不是原Chrome实际通过记录，不计现场结果。"
+    }
+  ],
+  "business_evidence_cutoff": "152-bb-final-three-hg-list.json",
+  "business_cutoff_at_utc": "2026-10-21T09:02:30Z",
+  "screenshot_evidence": [
+    {
+      "path": "154-bb-final-three-hg-visible.jpg",
+      "bytes": 154715,
+      "sha256": "1d88643eae5c61be9fc2d536c3bc70e4f68c0c1c492e2b299144562c215d7613",
+      "role": "主线程补充同页完整三行截图；H0.02/F80/Z0及Z无权益，辅助外观展示，业务依据仍152，不计新业务动作。",
+      "included_in_text_zip": false,
+      "excluded_reason": "截图在原目录保留并在对话展示，最终ZIP仅文本证据和原清单。"
+    }
+  ],
+  "fixture_evidence": [
+    {
+      "path": "fixtures/uat13-bb-opening-3-20261021.txt",
+      "bytes": 797,
+      "sha256": "f5892bbf3d5291b79987138efeece4bebc7a19d2f6dfbf5f86712fc4a48e6ab9",
+      "role": "原保留清单逐字副本；用于身份/清单SHA核对，不是新业务执行。"
+    },
+    {
+      "path": "fixtures/uat13-qn-opening-110-20261021.txt",
+      "bytes": 27351,
+      "sha256": "cf3a23643b6d15d6d48392828d32313408633dab8d74c840dc719837205922e1",
+      "role": "原保留清单逐字副本；用于身份/清单SHA核对，不是新业务执行。"
+    },
+    {
+      "path": "fixtures/uat13-sp-opening-48-20261021.txt",
+      "bytes": 11687,
+      "sha256": "ef7eb430cc43ff3340e69521f182da8de71ef4aae504222cc0d6a4f22f0c4c7f",
+      "role": "原保留清单逐字副本；用于身份/清单SHA核对，不是新业务执行。"
+    }
+  ],
+  "archive_policy": {
+    "contents": "文本JSON/Markdown/日志/patch及原TXT夹具",
+    "images_in_zip": false,
+    "screenshots": "保留原目录并在对话展示；screenshot_evidence仅登记来源与指纹，图片不入ZIP",
+    "archive_manifest": "实际入包文件由最终归档清单列明",
+    "business_cutoff_unchanged": 152
+  },
+  "document_evidence": [
+    {
+      "path": "README.md",
+      "bytes": 6036,
+      "sha256": "c4cec2ed45dce732262bc24ba3e3ee307672f6f558962f7c562415f1d98f5b01",
+      "role": "本轮结论、文件入口、归档排除截图说明与已执行门禁。"
+    },
+    {
+      "path": "续做断点.json",
+      "bytes": 38351,
+      "sha256": "23f2efbcad749f91aaa987e163ecde09534d32b45b94fffb4c4fbf800a26a187",
+      "role": "最终原对象与当前事实，三专项已完成且避免重复动作。"
+    },
+    {
+      "path": "spec/section24.md",
+      "bytes": 75481,
+      "sha256": "c45039fd7f2a7ee8809262037b28b3e09509bc402e340ae11f058e46cff06978",
+      "role": "第24节正文75481bytes，与主文追加体完全一致。"
+    },
+    {
+      "path": "spec/uat13-section24-append.patch",
+      "bytes": 76941,
+      "sha256": "d763c6294351865ce4040cfa247a54bc5f65d97da2018ec5a46dd3a3434d5c4e",
+      "role": "相对原1–23精确基线仅追加24，404增0删。"
+    },
+    {
+      "path": "spec/uat12-13-sections15-24-append.patch",
+      "bytes": 266346,
+      "sha256": "a14cdbb40f8a4eb0b240c0567cb7bab2b1472aa134b55c9bedbde6047a0f8bad",
+      "role": "相对远端c8d34a2原1–14精确基线追加15–24，2024增0删。"
+    },
+    {
+      "path": "spec/APPLY.md",
+      "bytes": 2178,
+      "sha256": "82b9ee2358949fdb1e9fea7582a8396c5e0c42e18c9582bb600734fd69b58754",
+      "role": "两份补丁适用基线、互斥选用及验证说明。"
+    }
+  ],
+  "frozen_at_utc": "2026-10-21T09:13:31.181533+00:00",
+  "formal_uat_status_counts": {
+    "未执行": 70
+  },
+  "native_playwright_executed": false
+}
