@@ -1,0 +1,422 @@
+{
+  "schema": "YIXI_UAT14_CONTINUATION_V1",
+  "business_evidence_cutoff_utc": "2026-10-21T15:39:25.852Z",
+  "business_timezone": "Asia/Shanghai",
+  "mode": "原Chrome合成页面补验",
+  "formal70_status": "全部未执行；本断点不改变正式MD/JSON",
+  "repositories": {
+    "spec": {
+      "repository": "canasher/yixi-spec",
+      "branch": "codex/laundry-phase1-prototype",
+      "input": "7cb18b537c9a9057f93280c899d062ebae0e072c",
+      "output": "包含本文件的实际Git提交"
+    },
+    "web": {
+      "repository": "canasher/yixi-web",
+      "branch": "codex/laundry-phase1-prototype",
+      "input": "9431b91db74216e3ce3c0eee8cb01d1861242282",
+      "current_commit_verified": "c6241c2b0e67671bb54f84d087f0462deaef752e",
+      "commit_url": "https://github.com/canasher/yixi-web/commit/c6241c2b0e67671bb54f84d087f0462deaef752e",
+      "deployed": false
+    }
+  },
+  "runtime": {
+    "original_user_chrome_required": true,
+    "no_new_demo_environment": true,
+    "full_running_sha_verified": false,
+    "startup_short_sha": "f7f4aa2ee065",
+    "startup_display_local": "2026/10/20 14:10:25",
+    "note": "开发启动元数据仅启动读取，不能证明HMR后实际模块完整SHA；不要把远端HEAD直接当现场版本",
+    "architecture": "localStorage＋页面内保存队列；保留校验、不得清存储或重置全量演示数据"
+  },
+  "evidence_index": "证据索引.json",
+  "archive_ref": {
+    "filename": "uat14-matrix-closeout-20261021.zip",
+    "library_file_id": "libfile_d4314482a53481918ce9c371a7a94d8c",
+    "bytes": 1470854,
+    "sha256": "32876b66283911531185d2ecc2a2fc776bf9a36a5f295d4815ab246788d79208",
+    "root": "uat14-matrix-closeout-20261021/",
+    "manifest_path": "uat14-matrix-closeout-20261021/ARCHIVE-MANIFEST.json",
+    "manifest_sha256": "a19c43d6dee836e7d33dc74cba4c138b509f9ef978740ced06c4fe02989b5577",
+    "payload_files": 179,
+    "zip_entries": 180,
+    "integrity_verified": true
+  },
+  "archive_status": "SAVED_CONTROLLED_ARCHIVE",
+  "qn": {
+    "batch_id": "1954515206939199582",
+    "confirmed_assets": 110,
+    "quota": {
+      "Q": 100,
+      "T": 0,
+      "R": 0,
+      "O": 110,
+      "A": -10
+    },
+    "source": "上一轮受控原件已本轮取回并复读；本轮未重做QN业务或逐件详情",
+    "original_insufficient_one_demand_rejected": true,
+    "no_added_demand_fee_funds_after_rejection": true,
+    "do_not_repeat": [
+      "原110件确认",
+      "调配额",
+      "不足需求",
+      "建立替代需求"
+    ]
+  },
+  "sp": {
+    "customer_id": "7430412882891820564",
+    "service_id": "6826933097766027020",
+    "quota_account_id": "7202104925404899606",
+    "batch_id": "2245694768640812531",
+    "demand_id": "1823726686495038162",
+    "task_id": "2982769959401833878",
+    "task_status": "已结案",
+    "task_version": "2577298529795749217",
+    "close_operation_id": "2558379780225416614",
+    "closed_at_utc": "2026-10-21T14:04:41.953Z",
+    "demand_quantities": {
+      "D": 50,
+      "C": 2,
+      "F": 48,
+      "I": 0,
+      "R": 0
+    },
+    "quota": {
+      "Q": 50,
+      "T": 0,
+      "R": 0,
+      "O": 48,
+      "A": 2
+    },
+    "physical": {
+      "factory_available": 0,
+      "customer_confirmed_holding": 48,
+      "position_pending": 0
+    },
+    "fee_id": "5229986381762566678",
+    "original_price": "2.00",
+    "original_fee": "100.00",
+    "adjustment": "-4.00",
+    "net_fee": "96.00",
+    "unpaid": "96.00",
+    "later_quote": "2.20；未回算原价",
+    "all_type_fund_rows": 0,
+    "final_o_sources_all_48_verified": true,
+    "all_48_asset_details_opened": false,
+    "page_hint": "019仍提示完成凭证待确认或依据已变化；合法不补发使旧完成凭证不再可用于继续装车，原完成历史保留。不能据此重做完成。",
+    "do_not_repeat": [
+      "备货",
+      "独立完成",
+      "装车",
+      "交付",
+      "欠2不补发批准",
+      "4元减免",
+      "本轮任务结案"
+    ]
+  },
+  "bb": {
+    "customer_id": "8298270696539761548",
+    "service_id": "3001198949299222185",
+    "quota_account_id": "4358006004649709012",
+    "pool_id": "2410875132291805289",
+    "batch_id": "3106757020825749319",
+    "bill_id": "5722787052786643611",
+    "bill_version": "6166681581384896646",
+    "bill_period": {
+      "start": "2026-10-21",
+      "end_exclusive": "2026-10-22",
+      "closed": false,
+      "checked_at_utc": "2026-10-21T14:22:24Z",
+      "result": "当时账期尚未结束，确认禁用；只有页面预检查，未提交关账"
+    },
+    "frozen_bill": "160.03",
+    "historical_paid": "160.03",
+    "actual_refunded": "80.02",
+    "current_net_fee": "80.01",
+    "current_net_settlement": "80.01",
+    "cash": "0.00",
+    "unpaid": "0.00",
+    "refunding": "0.00",
+    "all_type_nonzero_fund_rows": 6,
+    "fund_ids": [
+      "4019706134223902965",
+      "2507813720437047540",
+      "2975925002612598167",
+      "3227395147531642935",
+      "6822383195667945265",
+      "8192352065470347943"
+    ],
+    "quota": {
+      "Q": 3,
+      "T": 0,
+      "R": 0,
+      "O": 3,
+      "A": 0
+    },
+    "physical": {
+      "factory_available": 0,
+      "customer_confirmed_holding": 0,
+      "position_pending": 3
+    },
+    "assets": [
+      {
+        "label": "Z",
+        "asset_id": "3040290405483690919",
+        "asset_version": "3180628554396902118",
+        "case_id": "5290285426565609218",
+        "turnover_id": "8717900689830883044",
+        "fee_id": "3143137893110626554",
+        "buyback_id": "2658206505136308850",
+        "ratio_percent": 0,
+        "refund": "0.00",
+        "responsibility_released": false
+      },
+      {
+        "label": "F",
+        "asset_id": "3332821927291220011",
+        "asset_version": "1302950701405050780",
+        "case_id": "5566302812031245222",
+        "turnover_id": "3739989123429923616",
+        "fee_id": "5192029178264820541",
+        "buyback_id": "5341550227557580456",
+        "ratio_percent": 100,
+        "refund": "80.00",
+        "refund_id": "8985884287802345795",
+        "responsibility_released": false
+      },
+      {
+        "label": "H",
+        "asset_id": "2188837326712989629",
+        "asset_version": "7384509858031307673",
+        "case_id": "6883298937133642038",
+        "turnover_id": "8455683183665372572",
+        "fee_id": "6160121873929083014",
+        "buyback_id": "4622176296488662988",
+        "ratio_percent": 50,
+        "refund": "0.02",
+        "refund_id": "7590169477101213192",
+        "responsibility_released": false
+      }
+    ],
+    "asset_common": {
+      "lifecycle": "ACTIVE",
+      "hygiene": "待确认",
+      "quality": "HOLD",
+      "wash_count": 12,
+      "last_trusted_location": "客户持有",
+      "position": "待核",
+      "specific_location": "未登记",
+      "owner": "INITIAL",
+      "reserved": false,
+      "original_turnover_retained": true
+    },
+    "z_disposition_attempt": {
+      "proof_key": "UAT14-BB-Z-DISPOSE-20261021",
+      "submitted_once": true,
+      "result": "保存失败",
+      "confirmed_saved_application": false,
+      "application_id": null,
+      "readback": "038刷新后无申请；039仍O3；056/057原件资料和原轮未变",
+      "observed_log_utc": "2026-10-21T14:16:33.802Z",
+      "observed_log": "租洗演示快照保存失败 Object",
+      "error_type_known": false,
+      "draft_discarded": true,
+      "business_cancel_executed": false
+    },
+    "exports": [
+      {
+        "id": "6134757777445939272",
+        "basis": "冻结版本",
+        "amount": "160.03",
+        "generated_at_utc": "2026-10-21T14:23:34.290Z",
+        "status_after_reload": "可下载",
+        "download_attempted": true,
+        "download_result": "等待15000ms超时，无文件路径或原字节",
+        "raw_file_sha256": null
+      },
+      {
+        "id": "3451186522090778219",
+        "basis": "所选来源当前调整",
+        "amount": "80.01",
+        "generated_at_utc": "2026-10-21T14:25:36.109Z",
+        "status_after_reload": "可下载",
+        "download_attempted": true,
+        "download_result": "114封存前沿原80.01快照独立下载一次，等待15000ms超时，无路径或原字节；两导出和四原日志保持。029–057时点未执行的历史记录保留。",
+        "raw_file_sha256": null
+      }
+    ],
+    "no_export_revocation_evidence": true,
+    "final_browser_handoff": "原账单5722787052786643611详情保留两份已有导出；没有待确认业务表单。下载原字节未取得，账期未实际关闭。",
+    "not_done": [
+      "成功责任申请",
+      "独立批准责任关闭",
+      "实物回收",
+      "具体位置核对",
+      "原责任释放",
+      "账期实际关闭",
+      "两份CSV原字节核对"
+    ],
+    "do_not_repeat": [
+      "赔偿",
+      "付款",
+      "找回观察或复核",
+      "回购",
+      "退款",
+      "本轮两份导出快照生成"
+    ],
+    "next_after_publish": "先核原Z业务号是否已有申请；无记录才新预览并单次保存。三件独立批准后再按已结责任迟到实收来源接续，不从找回直接推定回厂或释额。"
+  },
+  "r003": {
+    "prefix": "UAT14-R003",
+    "customer_id": "6195581604972271593",
+    "customer_code": "UAT14-R003-20261021",
+    "item_id": "6591276291409921861",
+    "item_code": "UAT14-R003-SKU01",
+    "item_status": "DISABLED",
+    "service_id": "7696470055051764628",
+    "service_code": "UAT14-R003-FW01",
+    "service_version": "5095884973732696790",
+    "service_status": "ACTIVE",
+    "pool_id": "8207668229957462934",
+    "pool_status": "ACTIVE",
+    "owner": "INITIAL",
+    "quota_account_id": "6283106350400669685",
+    "quota": {
+      "Q": 0,
+      "T": 0,
+      "R": 0,
+      "O": 0,
+      "A": 0
+    },
+    "location_id": "5287588547782200341",
+    "location_code": "UAT14-R003-CLEAN",
+    "location_status": "ACTIVE",
+    "location_parent": null,
+    "location_history": [
+      "2026-10-21T15:08:08.526Z停用",
+      "2026-10-21T15:13:13.776Z恢复启用"
+    ],
+    "base": {
+      "batch_id": "3099744681093409970",
+      "source_ref": "UAT14-R003-BASE-20261021",
+      "report_version": "3644560746052869776",
+      "cutoff_utc": "2026-10-20T14:59:00.000Z",
+      "source_sha256": "687e81ca9dc99cc8b80e97299e1182a8b11634e92f5e99d2505838ce55f51ba7",
+      "confirmed": 1,
+      "row_key": "R003-001",
+      "report_save_operation_id": "3777522524012670342",
+      "confirm_operation_id": "2192339821739561164",
+      "confirmed_at_utc": "2026-10-21T15:05:34.397Z"
+    },
+    "only_asset": {
+      "id": "4713042485627201627",
+      "version": "5018801327877164311",
+      "code": "UAT14-R003-A001",
+      "epc": "F01420261021000300000001",
+      "lifecycle": "ACTIVE",
+      "hygiene": "CLEAN",
+      "quality": "NORMAL",
+      "wash_count": 0,
+      "position_confirmed": true,
+      "location_id": "5287588547782200341",
+      "reserved": false,
+      "customer_holding": false,
+      "turnover": null
+    },
+    "negative": {
+      "batch_id": "4025974730438635069",
+      "source_ref": "UAT14-R003-NEG-20261021",
+      "report_version": "6741717810344987693",
+      "cutoff_utc": "2026-10-20T15:10:00.000Z",
+      "source_sha256": "8b56a691da241524acdb51d43023fe2f0014cb1b0a4f301deedad314892b902a",
+      "confirmed": 0,
+      "rejected": 1,
+      "row_key": "R003-002",
+      "attempted_asset_code": "UAT14-R003-A002",
+      "attempted_epc": "F01420261021000300000002",
+      "asset_created": false,
+      "only_report_save_operation_id": "8017898185873874388",
+      "saved_at_utc": "2026-10-21T15:10:27.061Z",
+      "stored_rejection": "具体库位或上级已停用，不能确认新增期初资产",
+      "later_preview_error": "请选择启用客户、品项及服务对应的库存池。",
+      "later_error_saved": false,
+      "local_unsaved_inputs_explicitly_discarded": true
+    },
+    "factory_available_history": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "final_asset_count": 1,
+    "final_factory_available": 0,
+    "fee_count": 0,
+    "fund_count": 0,
+    "account_amounts": "现金、赠送、授信、信用已用、未付均0",
+    "formal_remaining": [
+      "父级库位停用",
+      "正式后端守卫",
+      "真实身份",
+      "数据库事务"
+    ],
+    "do_not_repeat": [
+      "BASE确认",
+      "库位停用或恢复",
+      "品项停用",
+      "重建同名夹具",
+      "确认NEG生成第二件资产"
+    ]
+  },
+  "page_results": {
+    "total": 14,
+    "PASS": 9,
+    "FAIL": 1,
+    "BLOCKED": 4,
+    "NOT_RUN": 0
+  },
+  "next_actions": [
+    {
+      "priority": 1,
+      "condition": "用户发布c6241且现场可验证已加载",
+      "action": "原Z先回读再重新预览，若确无申请单次保存；结果未知先原业务号回读，保留新诊断"
+    },
+    {
+      "priority": 2,
+      "condition": "原三件责任申请与独立批准均实际成功",
+      "action": "按原责任已关闭的迟到实收来源、原轮与找回复核版本接续实收及位置核对；不重复释额，HOLD不自动合格"
+    },
+    {
+      "priority": 3,
+      "condition": "浏览器下载通道能取回原文件",
+      "action": "只沿两份既有导出ID下载，核CSV原字节及SHA256，不重建或重新生成快照"
+    },
+    {
+      "priority": 4,
+      "condition": "上海日期自然达到2026-10-22且当前关账门禁满足",
+      "action": "沿原账单原区间关闭，先回读是否已有关闭记录；不改时钟/原期间，不重冻账单"
+    },
+    {
+      "priority": 5,
+      "condition": "不依赖上述发布或正式条件的独立页面子例",
+      "action": "按70项覆盖对照核当前入口、原对象和合成夹具后继续；不机械重跑已完成业务"
+    }
+  ],
+  "engineering_limits": {
+    "node_diagnostics": "8项预期成立，非Vitest/UAT",
+    "repository_test_count": 0,
+    "repository_assertion_count": 0,
+    "dependency_gates": "Vitest/类型/Lint/格式受项目node_modules缺失阻断",
+    "native_playwright": "348项仅此前发现，尚未执行",
+    "rollback": "回滚其他改动时保留线性解码器，旧正则可能读不了新写超长字典；不清存储、不删业务"
+  },
+  "prohibited_global": [
+    "合入主干",
+    "部署",
+    "真实扣款退款",
+    "清库",
+    "直接修改存储/余额/库存制造通过",
+    "改变商业规则",
+    "新增后端或IndexedDB",
+    "强推覆盖他人修改"
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schema": "YIXI_UAT14_EVIDENCE_INDEX_V1",
+  "nature": "原Chrome合成页面补验摘要与受控原件索引；不是正式70卡执行结果",
+  "branch": "codex/laundry-phase1-prototype",
+  "baselines": {
+    "spec": "7cb18b537c9a9057f93280c899d062ebae0e072c",
+    "web": "9431b91db74216e3ce3c0eee8cb01d1861242282",
+    "web_fix": "c6241c2b0e67671bb54f84d087f0462deaef752e",
+    "web_fix_url": "https://github.com/canasher/yixi-web/commit/c6241c2b0e67671bb54f84d087f0462deaef752e",
+    "spec_output": "由包含本文件的Git提交固定，不自引用",
+    "web_fix_deployed": false,
+    "runtime_full_sha_verified": false,
+    "runtime_note": "现场只显示开发启动f7f4aa2ee065；启动元数据不能证明HMR后的模块完整SHA"
+  },
+  "observation_window_utc": {
+    "from": "2026-10-21T13:57:34.154Z",
+    "to": "2026-10-21T15:39:25.852Z"
+  },
+  "archive_ref": {
+    "filename": "uat14-matrix-closeout-20261021.zip",
+    "library_file_id": "libfile_d4314482a53481918ce9c371a7a94d8c",
+    "bytes": 1470854,
+    "sha256": "32876b66283911531185d2ecc2a2fc776bf9a36a5f295d4815ab246788d79208",
+    "root": "uat14-matrix-closeout-20261021/",
+    "manifest_path": "uat14-matrix-closeout-20261021/ARCHIVE-MANIFEST.json",
+    "manifest_sha256": "a19c43d6dee836e7d33dc74cba4c138b509f9ef978740ced06c4fe02989b5577",
+    "payload_files": 179,
+    "zip_entries": 180,
+    "integrity_verified": true
+  },
+  "archive_status": "SAVED_CONTROLLED_ARCHIVE",
+  "path_semantics": "下列path及evidence均相对受控ZIP的uat14-matrix-closeout-20261021/根目录，不是仓库路径；所有原件的字节数与SHA256在ARCHIVE-MANIFEST.json逐条登记。授权持有人先验ZIP及manifest指纹再读原件，不凭摘要重建。",
+  "original_browser_evidence": {
+    "directory": "uat14-evidence/",
+    "number_range": "001–114",
+    "files": 119,
+    "json": 111,
+    "jpg": 8,
+    "number_is_not_file_count": true
+  },
+  "prior_archive": {
+    "filename": "uat13-postrelease-9431b91-20261021.zip",
+    "library_file_id": "libfile_279712085a988191a7c1de3415ed57e1",
+    "bytes": 712445,
+    "sha256": "49bad0529177e4e85e87868482c92c103627e79b5e8ff1f10a198513b7a1a225",
+    "retrieved_and_verified": true,
+    "indexed_texts_verified": 178,
+    "business_core_files_reread": 22,
+    "review": "matrix-work/原归档独立完整性与复读.json",
+    "limitation": "原包181条目，不含154号截图；本轮未重建该原图"
+  },
+  "formal70": {
+    "markdown_and_json_changed": false,
+    "registered_status_counts": {
+      "PASS": 0,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "NOT_RUN": 70
+    },
+    "phase1_functional": 65,
+    "phase1_structure_only": 3,
+    "future_only": 2,
+    "phase1_denominator": 68,
+    "baseline_dispatch_counts": {
+      "等待正式条件": 22,
+      "可补页面子场景": 30,
+      "核心页面子例已有": 13,
+      "结构缺口已核对": 3,
+      "后续范围": 2
+    },
+    "baseline_dispatch_is_not_execution_result": true,
+    "coverage": "matrix-work/70项证据对照草稿.json",
+    "coverage_consistency": "matrix-work/矩阵一致性核对.json",
+    "repository_record_anchor": "UAT-FORMAL14-COVERAGE70"
+  },
+  "page_unit_counting": {
+    "denominator": 14,
+    "counts": {
+      "PASS": 9,
+      "FAIL": 1,
+      "BLOCKED": 4,
+      "NOT_RUN": 0
+    },
+    "policy": "SP1＋BB9＋R0034个明确页面子场景或依赖目标；截图、刷新、资产行、流水行及审查断言不另计；工程诊断和正式70卡另计"
+  },
+  "units": [
+    {
+      "id": "SP14-01",
+      "status": "PASS",
+      "name": "原SP任务结案及完整48件O来源核对",
+      "anchor": "UAT-FORMAL14-SP-CLOSE",
+      "evidence": [
+        "uat14-evidence/016-sp-close-submission.json",
+        "uat14-evidence/017-sp-close-reload.json"
+      ],
+      "evidence_range": "006–028",
+      "review": "baseline-work/SP结案与48资产独立审查.json",
+      "limits": "未逐开48资产详情；非D1→D2或同趟100送80收"
+    },
+    {
+      "id": "BB14-01",
+      "status": "FAIL",
+      "name": "Z原责任处置申请保存",
+      "anchor": "UAT-FORMAL14-BB-DISPOSITION-FAIL",
+      "evidence": [
+        "uat14-evidence/031-bb-z-disposition-preview.json",
+        "uat14-evidence/032-bb-z-disposition-application.json",
+        "uat14-evidence/033-bb-z-storage-failure-stable.json",
+        "uat14-evidence/035-bb-z-save-diagnostics-and-dialog.json",
+        "uat14-evidence/036-bb-z-save-error-visible.jpg"
+      ],
+      "limits": "实际一次申请保存失败，未取得申请ID；现场具体异常仍未知"
+    },
+    {
+      "id": "BB14-02",
+      "status": "PASS",
+      "name": "失败后及导出后原数据不变量",
+      "evidence": [
+        "uat14-evidence/038-bb-z-no-saved-application-after-reload.json",
+        "uat14-evidence/039-bb-quota-after-failed-disposition.json",
+        "uat14-evidence/054-bb-account-after-exports.json",
+        "uat14-evidence/055-bb-six-nonzero-funds-after-exports.json",
+        "uat14-evidence/056-bb-z-asset-unchanged.json",
+        "uat14-evidence/057-bb-fh-assets-unchanged.json"
+      ],
+      "limits": "页面未见半落地，不替代正式数据库事务审计"
+    },
+    {
+      "id": "BB14-03",
+      "status": "PASS",
+      "name": "提前关账页面预检查",
+      "evidence": [
+        "uat14-evidence/042-bb-period-close-entry.json"
+      ],
+      "limits": "当时角色观察员、未填凭证；没有提交API，不是实际关账或R018迟到更正正例"
+    },
+    {
+      "id": "BB14-04",
+      "status": "PASS",
+      "name": "原冻结160.03导出快照生成及刷新",
+      "evidence": [
+        "uat14-evidence/045-bb-frozen-export-submission.json",
+        "uat14-evidence/050-bb-two-export-snapshots-reload.json",
+        "uat14-evidence/053-bb-two-export-rows-proof.jpg"
+      ],
+      "export_id": "6134757777445939272",
+      "limits": "仅快照及页面状态，不含CSV原字节"
+    },
+    {
+      "id": "BB14-05",
+      "status": "PASS",
+      "name": "当前80.01导出快照生成及刷新",
+      "evidence": [
+        "uat14-evidence/049-bb-current-export-submission.json",
+        "uat14-evidence/050-bb-two-export-snapshots-reload.json",
+        "uat14-evidence/051-bb-current-bill-view-and-exports.json",
+        "uat14-evidence/053-bb-two-export-rows-proof.jpg"
+      ],
+      "export_id": "3451186522090778219",
+      "limits": "未执行导出后新增调整不改文件、月报筛选、生成及下载撤权"
+    },
+    {
+      "id": "BB14-06",
+      "status": "BLOCKED",
+      "name": "冻结版CSV实际字节核对",
+      "evidence": [
+        "uat14-evidence/046-bb-frozen-export-download.json",
+        "uat14-evidence/047-bb-after-download-event-timeout.json"
+      ],
+      "limits": "下载事件等待15000ms超时，未取得文件；不是产品失败定案"
+    },
+    {
+      "id": "BB14-07",
+      "status": "BLOCKED",
+      "name": "当前版CSV独立下载及字节核对",
+      "evidence": [
+        "uat14-evidence/113-bb-existing-current-export-before-download.json",
+        "uat14-evidence/114-bb-current-export-download-attempt.json"
+      ],
+      "limits": "112–114封存前独立点击原80.01快照下载一次，等待15000ms超时，无路径／字节；原两导出和四日志保持；此前029–057复核时未执行的历史记录保留"
+    },
+    {
+      "id": "BB14-08",
+      "status": "BLOCKED",
+      "name": "原责任关闭后迟到实收和一次释额",
+      "evidence": [
+        "uat14-evidence/038-bb-z-no-saved-application-after-reload.json",
+        "uat14-evidence/039-bb-quota-after-failed-disposition.json",
+        "uat14-evidence/056-bb-z-asset-unchanged.json",
+        "uat14-evidence/057-bb-fh-assets-unchanged.json"
+      ],
+      "limits": "依赖原申请保存成功；批准、实收、定位、释额均未执行"
+    },
+    {
+      "id": "BB14-09",
+      "status": "BLOCKED",
+      "name": "原账期自然结束后的实际关账",
+      "evidence": [
+        "uat14-evidence/042-bb-period-close-entry.json"
+      ],
+      "limits": "观察时上海10/21，结束日10/22不含；之后必须重查原区间门禁，不改时钟"
+    },
+    {
+      "id": "R00314-01",
+      "status": "PASS",
+      "name": "独立厂内存量1件基线及刷新",
+      "anchor": "UAT-FORMAL14-R003-LIFECYCLE",
+      "evidence": [
+        "uat14-evidence/072-r003-base-reload-detail.json",
+        "uat14-evidence/073-r003-asset-active-baseline.json",
+        "uat14-evidence/074-r003-active-service-inventory-one.json"
+      ],
+      "evidence_range": "058–074"
+    },
+    {
+      "id": "R00314-02",
+      "status": "PASS",
+      "name": "停用库位拒新且原件不迁移",
+      "evidence": [
+        "uat14-evidence/080-r003-disabled-location-original-asset-readback.json",
+        "uat14-evidence/081-r003-disabled-location-zero-deliverable-and-negative-form.json",
+        "uat14-evidence/083-r003-disabled-location-rejected-preview.json",
+        "uat14-evidence/085-r003-negative-report-reload-detail.json"
+      ],
+      "limits": "本级库位；未测父级停用，086/087仅按钮禁用不作提交拒绝证据"
+    },
+    {
+      "id": "R00314-03",
+      "status": "PASS",
+      "name": "恢复同一库位使原件资格恢复",
+      "evidence": [
+        "uat14-evidence/091-r003-location-restored.json",
+        "uat14-evidence/092-r003-restored-location-one-deliverable.json"
+      ],
+      "limits": "088为定位超时，090/091才是真实恢复输入与保存"
+    },
+    {
+      "id": "R00314-04",
+      "status": "PASS",
+      "name": "停用品项拒新及原件历史财务保持",
+      "evidence": [
+        "uat14-evidence/097-r003-disabled-item-reload-original-reports.json",
+        "uat14-evidence/099-r003-disabled-item-preview-rejection.json",
+        "uat14-evidence/101-r003-disabled-item-visible-rejection.jpg",
+        "uat14-evidence/104-r003-final-original-asset-and-quota-readback.json",
+        "uat14-evidence/106-r003-final-unique-one-asset.json",
+        "uat14-evidence/109-r003-account-detail-empty-fees.json",
+        "uat14-evidence/110-r003-all-types-funds-empty.json",
+        "uat14-evidence/111-r003-final-two-original-reports-negative-unchanged.json"
+      ],
+      "limits": "品项错误仅未保存预览；明确放弃本地修改不是业务撤销；正式R003仍未执行"
+    }
+  ],
+  "independent_reviews": [
+    {
+      "path": "baseline-work/SP结案与48资产独立审查.json",
+      "scope": "原SP任务、48原资产/EPC与不变量"
+    },
+    {
+      "path": "matrix-work/BB本轮证据独立复核.json",
+      "scope": "029–057，原3件45字段与原6资金比较，9单元边界"
+    },
+    {
+      "path": "matrix-work/R003本轮证据独立复核.json",
+      "scope": "058–111，四子场景、同原件和报告、费用资金"
+    },
+    {
+      "path": "baseline-work/长token保存修复独立审查.json",
+      "scope": "四文件改动、架构和验证限制"
+    },
+    {
+      "path": "matrix-work/BB当前版下载追加独立复核.json",
+      "scope": "112–114独立下载超时；BB14-07由未执行转受阻，原两导出与四日志保持，原时点报告未改写"
+    },
+    {
+      "path": "reviews/规范内容独立审查.json",
+      "scope": "归档元数据前、001–111时点的规范内容和历史保护；后续下载增量另有复核"
+    },
+    {
+      "path": "reviews/规范内容增量核对.json",
+      "scope": "归档元数据前112–114追加证据及最终9/1/4/0、119原件口径；不覆盖原时点审查"
+    }
+  ],
+  "engineering": {
+    "source_defect_reproduced": true,
+    "browser_failure_same_cause_proven": false,
+    "diagnostics": {
+      "path": "rules-work/codec-long-token-diagnostic.json",
+      "pass": 8,
+      "old_defect_reproductions": 2,
+      "fix_compatibility_boundary": 6,
+      "runner": "Node内建独立合成诊断，非Vitest、UAT或浏览器回归"
+    },
+    "initial_failure_retained": "rules-work/codec-long-token-diagnostic.initial.json",
+    "repository_checks": "rules-work/codec-repository-checks.json",
+    "syntax_only": "rules-work/codec-typescript-syntax-check.json",
+    "architecture": "PASS",
+    "git_diff_check": "PASS",
+    "vitest": "BLOCKED",
+    "typescript_typecheck": "BLOCKED",
+    "eslint": "BLOCKED",
+    "prettier": "BLOCKED",
+    "blocked_reason": "项目node_modules不存在，未进入仓库检查主体；仓库测试0、断言0",
+    "pnpm_check": "NOT_RUN",
+    "production_build": "NOT_RUN",
+    "native_playwright": {
+      "status": "NOT_RUN",
+      "previously_discovered": 348
+    },
+    "current_browser_fix_regression": "NOT_RUN",
+    "static_structure_review": "rules-work/R064-R066当前结构与定向测试复核.md",
+    "r064_existing_test_attempt": "rules-work/r064-minimal-existing-test-attempt.json",
+    "remote_commit_readback": "rules-work/web-commit-remote-readback.json",
+    "rollback_limit": "旧9431正则可能读不了新写入超长字典；回滚须保留线性解码器，不得清存储或删业务"
+  },
+  "screenshot_limits": [
+    "033截图不含顶部保存错误，036才显示错误",
+    "052截图不完整显示两条导出，053同时显示两条",
+    "100截图不含顶部品项拒绝，101才显示",
+    "截图及按钮焦点不证明撤销导出已执行"
+  ],
+  "document_gates": {
+    "status": "PASS_DOCUMENT_GATES_ONLY",
+    "final_checks_after_archive_metadata": {
+      "full_document_checker": "PASS：57份Markdown、1015处本地链接／锚点；正式70卡仍全部未执行",
+      "git_diff_check": "PASS",
+      "git_cached_diff_check": "PASS",
+      "independent_content_review": "PASS：原时点及112–114增量分别审查；不是正式业务验收",
+      "post_commit_readback": "提交后回读原分支HEAD及四文件全文；实际结果随交付提交链接确认，不属于此前封存包"
+    },
+    "record": "reviews/规范候选检查.json",
+    "rerun_record": "reviews/规范候选检查复跑.json",
+    "archive_record_scope": "归档元数据填入前的真实检查；首次末尾空行失败保留，修正后全文及diff复跑通过。最终元数据填入后的检查和GitHub回读另行完成，不混入此前归档。"
+  },
+  "prohibition": "不得重复既有QN/SP/BB业务、SP本轮结案、BB本轮导出生成、R003已保存动作；未知写结果先原业务号回读。"
+}
