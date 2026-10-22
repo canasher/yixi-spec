@@ -1,0 +1,205 @@
+{
+  "schema": "YIXI_UAT15_EVIDENCE_INDEX_V1",
+  "nature": "原Chrome合成页面续验；部分页面、源码验证与正式整卡状态分开",
+  "branch": "codex/laundry-phase1-prototype",
+  "baselines": {
+    "spec_input": "70bdd62f2b48ef9b6356fff0d609c5d01f1b8216",
+    "web_input": "c6241c2b0e67671bb54f84d087f0462deaef752e",
+    "web_fix_commit": "2d84fb9675bd22ee3e13caaa177ae97e3f4c907a",
+    "web_fix_tree": "0ee66540eb78b4cf14703802747446ebbfd7196e",
+    "web_commit_url": "https://github.com/canasher/yixi-web/commit/2d84fb9675bd22ee3e13caaa177ae97e3f4c907a",
+    "spec_output": "包含本文件的实际Git提交",
+    "remote_start_readback": "uat15-work/remote-start-heads.json",
+    "local_and_prior_archive_readback": "uat15-work/baseline-readback.json",
+    "main_record_original_prefix_bytes": 739102,
+    "main_record_original_prefix_sha256": "c8669cf4c772ebaf1838638ed7359662556657f582fd9dc665f7a6906022bcf3",
+    "other_original_spec_files_preserved": 76,
+    "full_running_sha_verified": false,
+    "runtime_evidence": "uat15-evidence/004-visible-runtime-version.json",
+    "runtime_limit": "开发启动短号f7f4aa2ee065不随热更新改变；013安全诊断只证明相关保存模块具备c6241新增能力，不能证明全部模块完整SHA"
+  },
+  "observation_window_utc": {
+    "start": "2026-10-22T01:31:20.315Z",
+    "end": "2026-10-22T01:53:31.530Z",
+    "business_timezone": "Asia/Shanghai"
+  },
+  "archive_ref": {
+    "filename": "uat15-postrelease-closeout-20261022.zip",
+    "library_file_id": "libfile_8cccc06f0c448191b7df2b22ae95e789",
+    "bytes": 940554,
+    "sha256": "0cd294726945dc1ad71c9a48d6b7a5fa345b3bdd2d069dd3e469e1d5d7a531ca",
+    "root": "uat15-postrelease-closeout-20261022/",
+    "manifest_path": "uat15-postrelease-closeout-20261022/ARCHIVE-MANIFEST.json",
+    "manifest_sha256": "7e75c44b69b4ae9f9bda609c9eec476f843d89c8733c990a9dabbe5d8f1880d9",
+    "payload_files": 144,
+    "zip_entries": 145,
+    "integrity_verified": true
+  },
+  "archive_status": "SAVED_CONTROLLED_ARCHIVE",
+  "path_semantics": "原件路径相对ZIP根目录。按受控ID取回ZIP，先核ZIP字节数和SHA256，再核manifest及每个载荷大小/SHA256；不得凭摘要重建原件。",
+  "original_browser_evidence": {
+    "directory": "uat15-evidence/",
+    "sequence": "001–058",
+    "json_files": 58,
+    "png_files": 6,
+    "total_files": 64,
+    "per_file_hashes": "ARCHIVE-MANIFEST.json",
+    "all_raw_files_preserved": true,
+    "public_repository_contains_raw_files": false
+  },
+  "prior_archive": {
+    "index_path": "../2026-10-21第十四轮逐项对照与收尾/证据索引.json",
+    "filename": "uat14-matrix-closeout-20261021.zip",
+    "library_file_id": "libfile_d4314482a53481918ce9c371a7a94d8c",
+    "bytes": 1470854,
+    "sha256": "32876b66283911531185d2ecc2a2fc776bf9a36a5f295d4815ab246788d79208",
+    "payload_files_verified": 179,
+    "zip_entries_verified": 180,
+    "retrieved_and_verified": true
+  },
+  "formal70": {
+    "PASS": 0,
+    "FAIL": 0,
+    "BLOCKED": 0,
+    "NOT_RUN": 70,
+    "status_files_changed": false,
+    "matrix": "uat15-work/70项证据对照.json",
+    "matrix_bytes": 165251,
+    "matrix_sha256": "0b7edb3a72105245727b0181fd550b8e355877365563bc6b87c173b6bad87591",
+    "matrix_purpose": "保留70项原卡、历史覆盖及条件，本轮增量作为调度与证据；不是正式状态替代件",
+    "special_scope": "R064–066仅结构及禁用路径；R067/R068为后续；Playwright348项仍只发现未执行"
+  },
+  "page_unit_counting": {
+    "total": 9,
+    "PASS": 5,
+    "FAIL": 2,
+    "BLOCKED": 2,
+    "NOT_RUN": 0,
+    "basis": "按9个固定业务目标；截图/回读/资产行/资金行/输入变体不拆项，继承CSV阻断不算新操作"
+  },
+  "units": [
+    {
+      "id": "BB15-01",
+      "status": "FAIL",
+      "evidence_sequence": "005–013",
+      "actual": "原Z先查无申请，只提交一次；phase=write，QuotaExceededError，原始6228425/存储5314556 UTF-16字符单元；输入保留",
+      "error_time_utc": "2026-10-22T01:37:45.922Z",
+      "error_evidence": ["uat15-evidence/012-bb-z-disposition-submit-once.json", "uat15-evidence/013-bb-z-save-diagnostic.json"],
+      "limit": "不反推浏览器精确额度或物理字节；不倒写第十四轮未知根因"
+    },
+    {
+      "id": "BB15-02",
+      "status": "PASS",
+      "evidence_sequence": "014–015、028–032",
+      "actual": "刷新原案无责任申请，原三件资料/原轮保持，全部类型仍原6笔非零资金，无新增",
+      "quota_time_limit": "015总览在关账前；关账后O3由030–032各O1合计，不称总览再次读取"
+    },
+    {
+      "id": "BB15-03",
+      "status": "PASS",
+      "evidence_sequence": "016–023、058",
+      "actual": "原区间自然结束后一次关闭，刷新持久回读；3原费用/2调整/80.01净额",
+      "bill_id": "5722787052786643611",
+      "closure_id": "1129331722570428667",
+      "closed_at_utc": "2026-10-22T01:40:28.285Z",
+      "stable_screenshot": "uat15-evidence/023-bb-period-closed-proof.png",
+      "limit": "演示复核员，非正式身份/后端事务；关账不等于原责任关闭或实物回厂"
+    },
+    {
+      "id": "BB15-04",
+      "status": "PASS",
+      "evidence_sequence": "024",
+      "actual": "同区间预览提示已关闭区间重叠，确认禁用；未重复提交"
+    },
+    {
+      "id": "BB15-05",
+      "status": "BLOCKED",
+      "evidence_sequence": "012–015、030–032",
+      "actual": "原申请保存失败，独立批准及迟到实收依赖不成立；三件未实收/定位/释额",
+      "rules_review": "uat15-work/bb-closeout-rules.md"
+    },
+    {
+      "id": "R06315-01",
+      "status": "FAIL",
+      "evidence_sequence": "033–038",
+      "actual": "原停用品项本地改名后X关闭没有未保存提醒，重开临时输入丢失；原名、原版本不变，无业务提交",
+      "stable_screenshot": "uat15-evidence/038-r063-reopened-original-state.png",
+      "fix_review": "uat15-work/R063修复独立审查.json",
+      "post_fix_browser_result": "NOT_RUN"
+    },
+    {
+      "id": "R00915-01",
+      "status": "BLOCKED",
+      "evidence_sequence": "039–045",
+      "actual": "原7196537437593208024不在当前演示范围，原编码及旧、新标签查询无数据；未建替代或切换范围",
+      "missing_early_originals": ["audit/full-uat/asset-evidence.json", "08-two-assets-partial-release.jpg"],
+      "limit": "当前原对象不可取得；不认定查询算法失败，不推定缺失原因，不覆盖历史"
+    },
+    {
+      "id": "R04015-01",
+      "status": "PASS",
+      "evidence_sequence": "048–049",
+      "actual": "100→100.00；100.5→100.50；100.50→100.50，仅失焦格式，合法值未提交"
+    },
+    {
+      "id": "R04015-02",
+      "status": "PASS",
+      "evidence_sequence": "046–047、050–057",
+      "actual": "空值、100.001及100000000000000分别报必填/最多两位小数/最多14位整数；取消放弃输入，刷新无申请/账户0/资金空",
+      "stable_screenshot": "uat15-evidence/052-r040-fifteen-digit-rejected.png",
+      "limit": "没有合法充值申请、批准或资金入账；非账本并发及UNKNOWN整卡验证"
+    }
+  ],
+  "independent_reviews": {
+    "bb_001_032": "uat15-work/bb-evidence-review.json",
+    "remaining_033_057": "uat15-work/remaining-evidence-review.json",
+    "final_bill_058": "uat15-work/final-bill-readback-review.json",
+    "codec": "uat15-work/codec-v2-independent-review.json",
+    "r063": "uat15-work/R063修复独立审查.json",
+    "formal_matrix": "uat15-work/70项证据对照.json",
+    "document_candidate": "uat15-work/spec-independent-review-prearchive.json",
+    "rules_candidate": "uat15-work/spec-rules-review-prearchive.json",
+    "limit": "原报告按其时点保留；058最终回读单独列索引。同模型代理审查不是独立组织批准。"
+  },
+  "engineering": {
+    "fix_explanation": "uat15-work/BB责任申请容量失败与v2无损编码修复.md",
+    "author_node_diagnostics": {"status": "PASS", "tests": 11, "record": "uat15-work/codec-v2-direct-diagnostic.json"},
+    "independent_node_probes": {"status": "PASS", "groups": 6, "record": "uat15-work/codec-independent-probes.json", "initial_probe_failure_preserved": true},
+    "synthetic_compression": {"raw_characters": 6228579, "stored_characters": 355565, "actual_snapshot": false},
+    "architecture": {"status": "PASS", "record": "uat15-work/codec-v2-check-architecture.json"},
+    "syntax_only": {"status": "PASS", "files": 2, "record": "uat15-work/codec-v2-check-syntax.json", "is_typescript_typecheck": false},
+    "three_file_diff_gates": {"status": "PASS", "record": "uat15-work/web-final-gates.json"},
+    "native_gates": {"status": "BLOCKED", "scope": "Vitest/TypeScript/Lint/Prettier/pnpm check", "reason": "项目依赖入口缺失；pnpm前置/root/.local ENOENT及直接模块MODULE_NOT_FOUND，未进入目标主体", "tests": 0, "assertions": 0},
+    "build": "NOT_RUN",
+    "native_playwright": {"status": "NOT_RUN", "previously_discovered": 348},
+    "post_fix_browser_regression": "NOT_RUN",
+    "remote_commit_readback": "uat15-work/web-remote-readback.json",
+    "local_commit_alignment": "uat15-work/web-local-alignment.json",
+    "rollback_limit": "v2写入后须保留v2 reader和超长v1线性reader；c6241旧reader拒绝v2，不得清存储或删历史"
+  },
+  "evidence_limits": [
+    "004原工具结果没有capturedAt，不用mtime补造采集时刻；窗口由其余57份带显式时间的记录限定",
+    "013 PNG为表单预览，顶部保存错误使用012 DOM及013日志；不称错误条截图",
+    "020和037 PNG是过渡态，不作稳定成功证明",
+    "005/007/025–027/033/042/054等过程状态不代替稳定结果",
+    "029虽文件名含navigation，实际内容已经稳定显示原6笔资金",
+    "039等候超时后040明确原对象不在范围，不将单一超时定为产品失败",
+    "两份已有CSV原字节继承第十四轮下载阻断；本轮未再次尝试、未生成替代文件",
+    "未取得现场原始完整快照，合成压缩效果不能冒称实际压缩率"
+  ],
+  "document_gates": {
+    "status": "PASS_DOCUMENT_GATES_ONLY",
+    "scope": "全文文档、未暂存/已暂存差异、旧历史前缀及正式70状态、独立内容审查",
+    "record": "uat15-work/spec-candidate-gates.json",
+    "final_checks_after_archive_metadata": {
+      "full_document_checker": "PASS：58份Markdown、1021处本地链接/锚点；正式70卡仍全部未执行",
+      "git_diff_check": "PASS",
+      "git_cached_diff_check": "PASS",
+      "independent_content_review": "PASS：四文件候选及矩阵独立审查，无未关闭内容问题；不等于正式业务验收",
+      "history_protection": "原739102字节SHA及另外76原文件保持",
+      "post_commit_readback": "提交后回读原分支HEAD与4文件完整内容，实际结果随交付确认，不属此前ZIP"
+    },
+    "post_archive_limit": "元数据填入后的最终检查与规范提交回读在ZIP封存之后完成，不声称在此前封包内"
+  },
+  "prohibition": "不得重复既有QN/SP/BB/R003已完成业务，尤其BB本轮关账；未知写入结果先原业务号回读，禁止清存储和直接改数"
+}
