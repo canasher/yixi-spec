@@ -1,0 +1,132 @@
+{
+  "schema": "yixi.uat.postrelease17.evidence-index.v1",
+  "date": "2026-10-22",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE17",
+  "breakpoint": "续做断点.json",
+  "scope": "原Chrome单标签页合成页面，正式70项整卡未执行；工程验证独立统计",
+  "baseline": {
+    "branch": "codex/laundry-phase1-prototype",
+    "spec_head": "80ad9dc8c41223e31b1f62401a5b5171b869d559",
+    "spec_tree": "e79317f763fa3006d187da244e93a7449adee52e",
+    "web_head": "695870ad56fd83a73d4eabdd4571f3bad1aea1d6",
+    "web_tree": "fd2133345c0796286c12bc1860bfef94909d0a6b",
+    "current_heads_actually_read": true,
+    "exact_runtime_commit_verified": false,
+    "startup_short_sha": "f7f4aa2ee065",
+    "startup_time_shanghai": "2026-10-20 14:10:25",
+    "version_evidence": "uat17-evidence/019-version-dialog.json",
+    "version_limit": "开发热更新不刷新启动信息；目标位置文案由007与010证明生效，不将远端HEAD当完整运行SHA"
+  },
+  "recovered_original_archives": [
+    {
+      "filename": "uat16-postrelease-closeout-20261022.zip",
+      "library_file_id": "libfile_2aedf8ae0bec8191980fd08746f6d6a8",
+      "bytes": 1733427,
+      "sha256": "ddea31aa16fb2b4241cef10090bc9871eca22f38fcc75efa866ebc6b680929e0",
+      "zip_entries": 200,
+      "payloads": 199,
+      "all_payload_size_hash_and_zip_integrity": "PASS"
+    },
+    {
+      "filename": "uat16-final-submit-readback-20261022.zip",
+      "library_file_id": "libfile_41f8a459dd2c8191a292f0838ab3ed1e",
+      "bytes": 25177,
+      "sha256": "8528c3c0f4df840da5c4731f02914f880bd888b890ada56b0259ad7cca0f50fd",
+      "zip_entries": 12,
+      "payloads": 11,
+      "all_payload_size_hash_and_zip_integrity": "PASS"
+    }
+  ],
+  "archive_ref": {
+    "filename": "uat17-postrelease-navigation-20261022.zip",
+    "status": "SAVED_AND_PAYLOADS_VERIFIED",
+    "library_file_id": "libfile_17dfa0db3208819193c530beb807bc37",
+    "bytes": 1291357,
+    "sha256": "a61b794cff0bfdadaf4adc4c44f6faecbbe35f2cd9a1b8a136c80a766d2fab9c",
+    "manifest": "ARCHIVE-MANIFEST.json",
+    "payloads": 124,
+    "zip_entries": 125,
+    "cutoff_utc": "2026-10-22T07:07:57Z",
+    "integrity": "全部载荷大小及SHA256、ZIP CRC、无缺项/额外项、无路径穿越或符号链接均通过",
+    "page_json_count": 44,
+    "jpeg_screenshot_count": 5,
+    "retention": "受控归档；公开仓只含摘要及本索引"
+  },
+  "page_results": {
+    "planned_behavior_units": 6,
+    "actually_executed_behavior_units": 5,
+    "PASS": 3,
+    "FAIL": 2,
+    "BLOCKED": 0,
+    "NOT_RUN": 1,
+    "registry": "uat17-work/unit-results.json",
+    "counting_limit": "两项续做条件复核另列，不进入页面行为分母；10资产列表/3BB详情/6资金行均不拆增通过；不重复第16轮普通关闭及SP查询计数"
+  },
+  "formal70": {
+    "通过": 0,
+    "失败": 0,
+    "受阻": 0,
+    "未执行": 70,
+    "official_markdown_json_changed": false,
+    "matrix": "uat17-work/70项证据对照.json",
+    "matrix_bytes": 532067,
+    "matrix_sha256": "e6169c0abcd8a32d90a3a0c4f75e4b379a73b220e373ce598564f4900d63027c",
+    "definition_reconciliation": "uat17-work/formal70-definition-reconciliation.json",
+    "scope": "65一期功能，R064–066仅普洗结构/禁用路径，R067/068为后续自动下单",
+    "limit": "正式受阻0不是前提齐备；实际后端/数据库/IAM/设备/对象/凭证缺口仍逐卡保留"
+  },
+  "units": [
+    {"id": "COPY17-UNCERTAIN", "status": "PASS", "related_cards": ["UAT-R048"], "evidence": ["006-r048-existing-uncertain-inventory.json", "007-r048-uncertain-detail.json", "010-r048-position-visible.jpg", "011-r048-readonly-return.json"], "summary": "原R048-A001合法待核/O0，新提示实际出现；未倒退BB或制造对象"},
+    {"id": "BB17-CONFIRMED-RESPONSIBILITY", "status": "PASS", "related_cards": ["UAT-R029", "UAT-R043", "UAT-R044", "UAT-R051"], "evidence": ["012-bb-original-three-inventory.json", "013-bb-z-confirmed-detail.json", "014-bb-f-confirmed-detail.json", "015-bb-h-confirmed-detail.json", "017-bb-quota-stable.json"], "summary": "三原件已确认/DIRTY/HOLD/洗次12/O0、原周转/批准/唯一厂收及Q3T0R0O0A3保持；具体库位未登记"},
+    {"id": "BB17-FINANCE-INVARIANTS", "status": "PASS", "related_cards": ["UAT-R018", "UAT-R041", "UAT-R043", "UAT-R044", "UAT-R054"], "evidence": ["024-bb-bill-stable.json", "026-original-export-ids-and-assets.json", "027-bb-current-adjustment-view.json", "029-bb-account-stable.json", "031-bb-original-funds-six.json"], "summary": "原3费/2调整/6非零流水保持；冻结160.03、净80.01、已退80.02、余额与未付待退0；仅原导出行身份回读，无CSV字节"},
+    {"id": "R06317-SPA-BACK", "status": "FAIL", "related_cards": ["UAT-R063"], "evidence": ["034-r063-spa-prior-route.json", "035-r063-spa-enter-items.json", "036-r063-route-editor-before.json", "037-r063-route-unsaved-input.json", "038-r063-before-back.jpg", "039-r063-browser-back-result.json", "040-r063-back-stable-failure.json", "041-r063-after-back-loss.jpg", "043-r063-back-original-state-reopened.json"], "summary": "未保存临时名称后实际SPA Back无提醒离页、输入丢失；临时名称未保存，原品项保持"},
+    {"id": "R06317-RELOAD", "status": "FAIL", "related_cards": ["UAT-R063"], "evidence": ["044-r063-reload-unsaved-input.json", "045-r063-reload-result.json", "046-r063-reload-stable-failure.json", "047-r063-reload-original-state-reopened.json", "048-r063-final-original-history.json"], "summary": "临时名称后真实刷新无提醒丢输入；原版本/名称/停用/1资产1服务/两维护历史保持"},
+    {"id": "R06317-NAV-POSTRELEASE", "status": "NOT_RUN", "related_cards": ["UAT-R063"], "evidence": [], "summary": "等待本轮实际候选由用户发布后的原Chrome离页保护回归，不以工程测试替代"}
+  ],
+  "condition_rechecks_outside_page_denominator": [
+    {"id": "DIRTY17-CONDITION", "status": "BLOCKED", "evidence": ["022-locations-stable.json", "013-bb-z-confirmed-detail.json", "014-bb-f-confirmed-detail.json", "015-bb-h-confirmed-detail.json"], "reason": "当前4库位只有2净品区和2车辆位置；无合法DIRTY具体库位及独立定位依据", "limit": "只阻断具体库位补核，不回退已完成厂收，不重收或解除HOLD"},
+    {"id": "CSV17-CONDITION", "status": "BLOCKED", "evidence": ["024-bb-bill-stable.json", "025-original-export-dom-capabilities.json", "026-original-export-ids-and-assets.json"], "capability_document": "uat17-work/browser-page-assets-capability.json", "reason": "两原导出有按钮但无文件href；当前资源无CSV；附加能力原文只公开字体/图片/样式/视频打包，未提供这两CSV的新取回路径", "new_download_attempts": 0, "new_export_generation": 0, "limit": "不是新下载失败；旧超时保留，原CSV字节/CSV内容/SHA仍缺，不从存储重建"}
+  ],
+  "evidence_limitations": [
+    "008仅身份和版本上部，010才直接展示目标提示与O0；009为滚动工具超时，不涉及业务写入",
+    "019时间包装注明近似保存时间，不作精确事件发生时间；页面启动时间来自原DOM",
+    "016/021/023/028/030/032/039/042/045为加载或转场，稳定结果以随后原件为准",
+    "025空选择器匹配不等于无导出；026直接核到两个原data-row-key",
+    "Back与刷新失败由前后稳定页面和重开原值共同证明，不只依赖jsDialog为空",
+    "未提交本地临时名称，业务保存0；原品项维护历史仍2条",
+    "原关闭ID1129331722570428667继承历史，本轮未重新展开取ID；两导出ID本轮由026直接再核",
+    "未重复QN/SP/R003已完成业务，不声称本轮重验全部110/48/3原规模或正式身份隔离",
+    "正式70项、页面6单元、条件复核2项及工程候选结果分开统计"
+  ],
+  "engineering": {
+    "status": "COMMITTED_AND_REMOTE_FULL_READBACK",
+    "web_commit": "5fbfff61672824b41e0628d58c74ba92e25d94de",
+    "web_parent": "695870ad56fd83a73d4eabdd4571f3bad1aea1d6",
+    "web_tree": "59fa276a17132dfdf97273262bcdd43594f1c500",
+    "commit_url": "https://github.com/canasher/yixi-web/commit/5fbfff61672824b41e0628d58c74ba92e25d94de",
+    "changed_files": {"product": 3, "test": 2, "total": 5},
+    "checks": [
+      {"command": "pnpm --filter @frontend/customer-console typecheck", "status": "PASS", "exit_code": 0},
+      {"command": "pnpm --filter @frontend/customer-console lint", "status": "PASS_WITH_BASELINE_WARNINGS", "exit_code": 0, "errors": 0, "baseline_warnings": 2},
+      {"command": "pnpm --filter @frontend/customer-console exec vitest run src/components/CustomerDrawerNavigationGuard.test.tsx --reporter=verbose", "status": "PASS", "exit_code": 0, "passed": 15, "failed": 0},
+      {"command": "pnpm smoke --filter=@frontend/customer-console --env-mode=loose -- drawer-navigation.spec.ts --workers=1 --reporter=list", "status": "PASS", "exit_code": 0, "passed": 5, "failed": 0, "candidate_build": "PASS", "full_command_and_environment": "uat17-recovery/frontend-candidate/verify-results.json"},
+      {"command": "pnpm check", "status": "FAIL_BASELINE_FORMAT", "exit_code": 1, "architecture": "PASS", "unchanged_failures": ["rentalDemoSnapshotCodec.ts", "rentalDemoSnapshotCodec.test.ts"], "subsequent_full_repository_typecheck_lint_test": "NOT_RUN_BY_SHORT_CIRCUIT"},
+      {"command": "候选五文件Prettier、git diff --check、git diff --cached --check", "status": "PASS", "exit_code": 0}
+    ],
+    "new_unique_engineering_tests": 20,
+    "historical_playwright_348_executed": 0,
+    "actual_results": "uat17-recovery/frontend-candidate/verify-results.json",
+    "source_manifest": "uat17-recovery/frontend-candidate/candidate-source-manifest.json",
+    "addendum": "uat17-work/engineering-evidence-addendum.json",
+    "review": "uat17-work/r063-code-independent-review.json",
+    "review_result": {"same_model_independent_agent": true, "findings_closed": 2, "blocking_code_findings_open": 0, "not_formal_iam_or_human_approval": true},
+    "submission": "uat17-work/web-submission-receipts.json",
+    "remote_readback": "uat17-work/web-commit-readback.json",
+    "readback_scope": "实际分支头、提交父项、完整树和5份文件全文逐字节匹配，非仅提交链接存在",
+    "earlier_attempts_preserved": true,
+    "artifact_limit": "首轮单测完整stdout未独立落文件；原生dialog body附件未独立落盘；保留实际结果缓存、日志和明确限制，不重建原件",
+    "deployed_by_assistant": false,
+    "postrelease_page_regression": "NOT_RUN"
+  },
+  "document_gates": {"status": "FINAL_RESULTS_IN_POST_ARCHIVE_SUPPLEMENT", "history_prefix_bytes": 777553, "history_prefix_sha256": "19efdd81eb6683c8bdeeff517d2ce565e92f5b05a24c546509b912fff13c72da", "formal70_unchanged": true, "prearchive_checks": "uat17-work/spec-prearchive-document-gates.json", "prearchive_review": "uat17-work/spec-independent-review-prearchive.json", "final_checks": "uat17-work/spec-final-document-gates.json", "final_review": "uat17-work/spec-final-metadata-review.json", "actual_spec_submission": "uat17-work/spec-submission-receipts.json", "remote_readback": "uat17-work/spec-commit-readback.json", "post_archive_supplement_filename": "uat17-final-submit-readback-20261022.zip", "limit": "最终归档元数据门禁、规范提交与远端全文回读在主包之后，另存补充包，不声称预先包含于主包；实际规范SHA由包含本索引的提交和补充回执固定"}
+}
