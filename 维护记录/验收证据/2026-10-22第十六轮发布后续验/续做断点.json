@@ -1,0 +1,103 @@
+{
+  "schema": "yixi.uat.postrelease16.breakpoint.v1",
+  "business_evidence_cutoff_utc": "2026-10-22T05:43:24.002Z",
+  "business_timezone": "Asia/Shanghai",
+  "mode": "原Chrome单标签页合成现场；不是正式目标环境整卡验收",
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "evidence_index": "证据索引.json",
+  "archive_ref": "证据索引.json#/archive_ref",
+  "repositories": {
+    "branch": "codex/laundry-phase1-prototype",
+    "spec": {"repository": "canasher/yixi-spec", "input_head": "8d8d25b1b2768ab4f835c2e9f985ffc3f53d8b31", "output_head": "由包含本断点的实际Git提交固定，不自引用自身SHA"},
+    "web": {"repository": "canasher/yixi-web", "input_head": "2d84fb9675bd22ee3e13caaa177ae97e3f4c907a", "submitted_head": "695870ad56fd83a73d4eabdd4571f3bad1aea1d6", "submitted_tree": "fd2133345c0796286c12bc1860bfef94909d0a6b", "commit_url": "https://github.com/canasher/yixi-web/commit/695870ad56fd83a73d4eabdd4571f3bad1aea1d6", "remote_full_content_verified": true, "deployment_by_assistant": false, "postrelease_regression": "NOT_RUN"}
+  },
+  "runtime": {
+    "surface": "用户原Chrome、原Customer Console、当前账号/企业/工厂单标签页",
+    "architecture": "localStorage＋页面内保存队列；未清空或直改存储",
+    "startup_short_sha": "f7f4aa2ee065",
+    "startup_time_shanghai": "2026-10-20 14:10:25",
+    "exact_runtime_commit_verified": false,
+    "version_limit": "开发热更新不刷新启动元数据；当前仓库HEAD不能等同完整运行SHA",
+    "observed_behavior": ["原品项四关闭入口已提醒并支持继续/放弃", "三责任申请及三独立批准成功刷新保留", "原三件迟到厂收一次提交后按原单回读并刷新保留"],
+    "handoff_route": "/applications/rental-assets/inventory?keyword=UAT13-SP-A&location=HOTEL&registration=ALL&page=3&pageSize=10",
+    "pending_form_or_unknown_business_result": false
+  },
+  "qn": {
+    "original_batch_id": "1954515206939199582",
+    "confirmed_original_quantity": 110,
+    "retained_quota": {"Q": 100, "T": 0, "R": 0, "O": 110, "A": -10},
+    "round16_scope": "未重做专项；057列表旁证仍Q100/O110/A−10，不新增执行计数",
+    "completed_negative_case": "新增1件需求已因可用配额不足拒绝，历史无新增需求、费用或资金",
+    "do_not_repeat": ["110件确认", "配额调整", "不足需求提交", "替代需求或缩小规模重跑"]
+  },
+  "sp": {
+    "customer_id": "7430412882891820564",
+    "service_id": "6826933097766027020",
+    "quota_account_id": "7202104925404899606",
+    "opening_batch_id": "2245694768640812531",
+    "demand_id": "1823726686495038162",
+    "task_id": "2982769959401833878",
+    "task_status": "已于第十四轮结案；本轮未重办",
+    "historical_task_close_operation": "2558379780225416614",
+    "historical_task_close_utc": "2026-10-21T14:04:41.953Z",
+    "demand_round16_readback": {"D": 50, "C": 2, "F": 48, "I": 0, "R": 0, "net_fee": "96.00", "unpaid": "96.00", "paid": "0.00", "evidence": "uat16-evidence/137-sp-original-demand-stable.json"},
+    "retained_quota": {"Q": 50, "T": 0, "R": 0, "O": 48, "A": 2, "scope": "原断点；本轮没有另开SP配额详情重验"},
+    "inventory_round16_readback": {"filtered_count": 48, "available_clean": 0, "reserved": 0, "confirmed_customer_held": 48, "unknown_position": 0},
+    "fee_id": "5229986381762566678",
+    "retained_price_snapshot": {"unit_price": "2.00", "original_fee": "100.00", "approved_reduction": "4.00", "later_quote": "2.20", "later_quote_does_not_reprice": true, "scope": "原专项结论保留；本轮实际回读净96/未付96，不重复核价或减免"},
+    "historical_fund_count": 0,
+    "round16_query_unit": {"id": "R06316-SP-QUERY", "status": "PASS", "keyword": "UAT13-SP-A", "location": "HOTEL", "registration": "ALL", "page": 3, "page_size": 10, "visible_asset_codes": ["UAT13-SP-A021", "UAT13-SP-A022", "UAT13-SP-A023", "UAT13-SP-A024", "UAT13-SP-A025", "UAT13-SP-A026", "UAT13-SP-A027", "UAT13-SP-A028", "UAT13-SP-A029", "UAT13-SP-A030"], "linked_asset_id": "2982934493070991848", "linked_asset_version": "5807886421366830901", "linked_turnover_id": "2142596598579440635", "browser_back_used": true, "reload_preserved": true, "evidence_sequence": "127–143", "limit": "只读查询生命周期，不是48件逐一回归；高级条件展开状态、滚动位置和明细分页不在通过范围"},
+    "accompanying_observation": "137当前操作区仍提示完成凭证待确认或依据已变化；本轮未操作该入口，不据此推翻原履约、重办完成或新增FAIL",
+    "do_not_repeat": ["备货", "独立完成", "装车", "交付", "批准不补发", "4元减免", "任务结案"]
+  },
+  "bb": {
+    "customer_id": "8298270696539761548",
+    "service_id": "3001198949299222185",
+    "quota_account_id": "4358006004649709012",
+    "pool_id": "2410875132291805289",
+    "opening_batch_id": "3106757020825749319",
+    "bill_id": "5722787052786643611",
+    "bill_version_id": "6166681581384896646",
+    "original_assets": [
+      {"name": "Z", "asset_id": "3040290405483690919", "case_id": "5290285426565609218", "turnover_id": "8717900689830883044", "epc": "F01320261021050000000001", "disposition_id": "6926472355212086734", "disposition_status": "APPROVED", "application_operation_id": "5179349856694191873", "application_recorded_utc": "2026-10-22T03:03:18.177Z", "approval_operation_id": "5717297559533407034", "approval_recorded_utc": "2026-10-22T03:05:30.101Z", "approval_version": "5257946551864460815", "found_review_id": "1571802612700651556", "pre_receipt_asset_version": "3180628554396902118", "current_asset_version": "5967295757656584154", "fee_id": "3143137893110626554", "buyback_percent": "0", "actual_refund": "0.00", "current_net_fee": "80.00"},
+      {"name": "F", "asset_id": "3332821927291220011", "case_id": "5566302812031245222", "turnover_id": "3739989123429923616", "epc": "F01320261021050000000002", "disposition_id": "1551417962375885712", "disposition_status": "APPROVED", "application_operation_id": "6360417101816788558", "application_recorded_utc": "2026-10-22T03:11:37.253Z", "approval_operation_id": "3966988099745888699", "approval_recorded_utc": "2026-10-22T03:13:12.388Z", "approval_version": "2624590230299535966", "found_review_id": "3163260662277932268", "pre_receipt_asset_version": "1302950701405050780", "current_asset_version": "1743194298750580495", "fee_id": "5192029178264820541", "buyback_percent": "100", "actual_refund": "80.00", "current_net_fee": "0.00"},
+      {"name": "H", "asset_id": "2188837326712989629", "case_id": "6883298937133642038", "turnover_id": "8455683183665372572", "epc": "F01320261021050000000003", "disposition_id": "8385051401383769425", "disposition_status": "APPROVED", "application_operation_id": "8045377851553090004", "application_recorded_utc": "2026-10-22T03:15:48.934Z", "approval_operation_id": "6742728370654607063", "approval_recorded_utc": "2026-10-22T03:17:55.968Z", "approval_version": "7377490187939294741", "found_review_id": "1395787487096632970", "pre_receipt_asset_version": "7384509858031307673", "current_asset_version": "1640756894607091532", "fee_id": "6160121873929083014", "buyback_percent": "50", "actual_refund": "0.02", "current_net_fee": "0.01", "historical_rounding": "0.03×50%=0.015，HALF_UP为0.02；本轮未重做"}
+    ],
+    "responsibility_result": {"effect": "CLOSE_OUTSTANDING", "selected_mode": "KEEP_DEMAND", "per_application_delta": {"O": 0, "R": 0, "A": 0, "I": 0, "C": 0}, "per_approval_delta": {"O": -1, "R": 0, "A": 1, "I": 0, "C": 0}, "new_demand_created": false, "real_two_account_iam_verified": false},
+    "receipt": {"id": "1222475059611429857", "number": "SH-DEMO-1222475059611429857", "operation_id": "8119647550537866639", "source": "FACTORY_BACKFILL", "occurred_at_utc": "2026-10-22T03:22:00.000Z", "recorded_at_utc": "2026-10-22T03:26:56.848Z", "business_day": "2026-10-22", "proof_key": "UAT16-BB-LATE-FACTORY-20261022", "proof_nature": "明确的合成厂内脏品接收，不代表真实物流签认", "handover_quantity": 0, "net_valid_return_quantity": 3, "factory_received_quantity": 3, "pending_quantity": 0, "anomaly_quantity": 0, "new_quota_release_quantity": 0, "new_turnover_created": false, "three_original_source_rows": "APPLIED", "submit_count": 1, "unknown_click_result": "111工具回执超时；112先回读、113刷新、114展开同一唯一单；未重试提交", "specific_location_id": null, "specific_location_null_basis": "页面明确未登记＋固定实现解释；未读取或改写浏览器存储"},
+    "current_assets": {"count": 3, "lifecycle": "ACTIVE", "hygiene": "DIRTY", "quality": "HOLD", "location_category": "DIRTY", "position_certainty": "CONFIRMED", "specific_location": "未登记", "current_customer": null, "ownership": "INITIAL", "wash_count_each": 12, "reserved": false, "outstanding_each": 0, "original_turnovers_preserved": true, "original_epcs_preserved": true, "associated_receipt_each": "1222475059611429857", "evidence_sequence": "116–118"},
+    "current_quota": {"Q": 3, "T": 0, "R": 0, "O": 0, "A": 3, "available_clean": 0, "confirmed_customer_held": 0, "unknown_position": 0, "evidence_sequence": "119", "position_limit": "待核0仅指类别保管可信度；不能证明正式具体库位ID完成"},
+    "concrete_location_blocker": {"status": "BLOCKED", "observed_locations": 4, "eligible_dirty_locations": 0, "evidence_sequence": "095、105、116–118", "formal_design_gap": "领域与技术设计§5.4 current_location_id仍为BIGINT必填；页面null不代表正式设计满足", "scope": "具体库位核对受阻；已完成的合成厂收不整体回退为受阻"},
+    "finance": {"frozen_bill": "160.03", "original_fee_count": 3, "original_approved_adjustment_count": 2, "historical_paid": "160.03", "actual_refunded": "80.02", "current_net_fee": "80.01", "current_net_settled": "80.01", "cash": "0.00", "gift": "0.00", "used_credit": "0.00", "unpaid": "0.00", "refunding": "0.00", "pending_refund": "0.00", "fund_record_count": 6, "new_round16_fees": 0, "new_round16_fund_rows": 0, "zero_amount_fund_rows": 0, "evidence_sequence": "121–126"},
+    "fund_rows": [
+      {"id": "4019706134223902965", "cash_delta": "80.01"},
+      {"id": "2507813720437047540", "cash_delta": "-80.00"},
+      {"id": "2975925002612598167", "cash_delta": "80.00"},
+      {"id": "3227395147531642935", "cash_delta": "-0.03"},
+      {"id": "6822383195667945265", "cash_delta": "0.02"},
+      {"id": "8192352065470347943", "cash_delta": "-80.00"}
+    ],
+    "closed_period": {"id": "1129331722570428667", "id_source": "第十五轮已回读断点；本轮121–123未直接展示ID", "start_inclusive": "2026-10-21", "end_exclusive": "2026-10-22", "closed_at_utc": "2026-10-22T01:40:28.285Z", "status": "CLOSED", "round16_readback": "原区间、3费用/2调整、80.01、时间及原凭证保持", "reclosed": false},
+    "existing_exports": [{"id": "6134757777445939272", "basis": "核准冻结版", "amount": "160.03"}, {"id": "3451186522090778219", "basis": "所选来源当前调整视图", "amount": "80.01"}],
+    "export_limit": "ID沿历史断点，本轮121–123只回读原两行状态/金额/时间与凭证；无CSV原字节、无重新生成或下载调用",
+    "do_not_repeat": ["丢失确认", "赔偿", "付款", "找回观察及复核", "回购", "退款", "三责任申请", "三责任批准", "唯一三件迟到厂收", "原账期关闭", "两导出快照生成"]
+  },
+  "r063": {
+    "original_item_id": "6591276291409921861", "original_item_version": "8430535518194943583", "code": "UAT14-R003-SKU01", "name": "十四轮生命周期验收浴巾", "status": "INACTIVE", "asset_references": 1, "service_references": 1, "maintenance_events": 2,
+    "completed_round16_units": ["R06316-CLEAN", "R06316-X", "R06316-CANCEL", "R06316-MASK", "R06316-ESC", "R06316-LABEL", "R06316-SP-QUERY"],
+    "saved_test_edit": false,
+    "item_list_status_filter": "全部；没有执行停用筛选",
+    "still_unverified": ["提交中关闭锁", "保存失败输入保持", "UNKNOWN原键恢复", "路由/离站保护", "正式IAM与全部客户端", "所有R063整卡数据断言"]
+  },
+  "r003_retained_fixture": {"asset_id": "4713042485627201627", "service_id": "7696470055051764628", "pool_id": "8207668229957462934", "quota_id": "6283106350400669685", "location_id": "5287588547782200341", "base_batch_id": "3099744681093409970", "base_status": "已确认1件，不重复", "negative_batch_id": "4025974730438635069", "negative_status": "未确认；原0成功/1拒绝保持，不重新确认或生命周期操作"},
+  "r009": {"asset_id": "7196537437593208024", "code": "UAT-20261018-A001", "old_epc": "E28020261018000000000001", "new_epc": "E28020261018000000000002", "status": "继承原对象合法范围及早期原件入口缺口；本轮未重复空查询、换芯或建替代链", "missing_original_evidence": ["audit/full-uat/asset-evidence.json", "08-two-assets-partial-release.jpg"]},
+  "page_results": {"planned_units": 15, "actually_reached_units": 14, "PASS": 12, "FAIL": 1, "BLOCKED": 1, "NOT_RUN": 1, "registry": "uat16-work/unit-results.json（受控归档内）", "formal70_changed": false},
+  "next_actions": [
+    {"order": 1, "condition": "任何新会话开始", "action": "先回读两仓当前HEAD、原Chrome及本断点；核他人后续差异，不把695870或输入SHA当未经验证的运行版本。三件责任与实收都已有唯一结果，只回读。"},
+    {"order": 2, "condition": "当前无须等待695870发布", "action": "对照最新70项矩阵检查新增的正式后端/数据库/IAM/设备及具体DIRTY库位条件；若有合法具体位置和独立位置确认依据，沿三原资产办理相应位置核对，不重做收货、不自动解除HOLD。"},
+    {"order": 3, "condition": "已有原导出下载能力恢复或新增取回路径", "action": "只沿两个原导出ID补取原CSV字节并核内容/指纹，不重新生成，不在没有新条件时重复旧超时调用。"},
+    {"order": 4, "condition": "用户实际发布695870后", "action": "核当前分支/现场版本；只读回归资产详情待核与已确认提示、O及独立责任显示。三原BB已实收，禁止倒退位置造待核；缺合法待核对象时记录该分支未验证。"}
+  ],
+  "engineering_limits": {"web_change": "仅RentalInventoryPage.tsx一处位置提示文案", "candidate_sha256": "11e5f0d4622fdf24c5f7e38ef6e46f0965ca0dea6f65b38a733ebd24d03e0623", "static_diff_and_independent_review": "PASS", "build_type_lint_format_check": "BLOCKED：依赖MODULE_NOT_FOUND，目标检查主体未运行", "native_playwright_discovered": 348, "native_playwright_executed": 0, "postrelease_695870": "NOT_RUN", "rollback": "保留v2 reader及超长v1线性reader；不能退回不能读v2的旧codec或清存储"},
+  "prohibited_global": ["清浏览器存储", "重置全量演示", "直接改余额/库存/原快照", "缩小110/48/3规模", "重做已确认业务", "用模拟身份冒充正式IAM", "用页面部分PASS升级70整卡", "用历史工程结果代替新验证", "合主干", "代生产部署", "真实扣款退款", "改变商业规则", "新增后端架构或IndexedDB", "强推覆盖他人修改"]
+}
