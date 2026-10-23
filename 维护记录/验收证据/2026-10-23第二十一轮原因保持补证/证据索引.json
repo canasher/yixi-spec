@@ -1,0 +1,15 @@
+{
+  "schema": "yixi.uat.postrelease21.evidence.v1",
+  "date": "2026-10-23",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE21",
+  "evidence_scope": "本会话原Chrome工具回执及一次原因保持截图；本文件为去敏摘要，不是原始回执",
+  "archive_id": null,
+  "archive_created": false,
+  "observations": [
+    {"id": "FIRST_BACK", "action": "接续详情打开编辑，仅填原因后Back", "result": "FAIL", "actual": "独立回读稳定列表，编辑与确认消失，未点击放弃或保存", "navigation_type": "UNKNOWN", "root_cause": "UNRESOLVED"},
+    {"id": "SECOND_BACK", "action": "当前列表点原品项名称，编辑填原因；另次调用直接回读值后Back", "actual": "出现放弃未保存的修改确认，原因保留"},
+    {"id": "CONTINUE_STABLE", "observed_at_utc": "2026-10-23T12:02:24.468Z", "action": "点击一次继续编辑后独立回读", "confirmation_count": 0, "reason": "UAT21-R063-REASON-20261023：仅验证继续编辑后原因稳定保留，不保存。", "proof": "", "item_version": "8430535518194943583", "subbranch": "OBSERVED_SUCCESS_NOT_NEW_PASS", "screenshot": "本会话随后实际capture，显示原因全文及无确认框"},
+    {"id": "SAFE_HANDOFF", "observed_at_utc": "2026-10-23T12:03:26.970Z", "action": "临时原因清空后取消，独立回读", "editor_count": 0, "confirmation_count": 0, "item_status": "INACTIVE", "asset_count": 1, "service_count": 1, "maintenance_events": 2, "final_version_directly_observed": false}
+  ],
+  "checks": {"engineering_tests": "NOT_RUN_NO_CODE_CHANGE", "document_checks": "见最终交付的本次实际回执，不预填通过"}
+}

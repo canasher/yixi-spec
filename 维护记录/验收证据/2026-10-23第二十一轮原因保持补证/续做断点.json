@@ -1,0 +1,19 @@
+{
+  "schema": "yixi.uat.postrelease21.breakpoint.v1",
+  "date": "2026-10-23",
+  "previous_breakpoint": "../2026-10-22第十九轮发布后续验/续做断点.json",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE21",
+  "evidence_index": "证据索引.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "97856e65b56ce49facff6070ea671289194dd92c",
+  "web_remote_head": "da19ed7446b76d494367b364f3a9d910d186da94",
+  "complete_runtime_sha": null,
+  "page_results": {"planned": 1, "executed": 1, "PASS": 0, "FAIL": 1, "BLOCKED": 0, "NOT_RUN": 0},
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "conditions": {"native_cancel": "BLOCKED_NO_NEW_ENTRY", "dirty_location": "NOT_RUN", "original_csv": "NOT_RUN"},
+  "runtime": {"route": "/applications/rental-assets/items?detail=6591276291409921861", "handoff": "原只读详情，无编辑器或确认框", "pending_form": false, "unknown_business_result": false, "save_submissions": 0, "role_changes": 0, "direct_storage_mutations": 0},
+  "completed": ["原因继续编辑后的独立稳定回读与截图；不再默认重跑该分支", "临时原因清空并返回原只读详情"],
+  "open_anomaly": {"first_back_lost_input": true, "second_back_protected": true, "same_navigation_history": false, "root_cause": "UNRESOLVED", "limit": "缺导航类型和注册时点证据，不归因产品或工具，不覆盖第十八轮query异常"},
+  "next_action": "先调查接续历史与当前列表新建详情历史的差异及保护注册时点；取得新事实再定位或修复，不无条件重复原操作",
+  "constraints": ["保留第十九轮全部禁止重办项", "不得保存临时输入或故障注入", "不得将局部分支或文档检查记为正式70卡通过", "不重做BB/QN/SP/R003，不清存储，不部署"]
+}
