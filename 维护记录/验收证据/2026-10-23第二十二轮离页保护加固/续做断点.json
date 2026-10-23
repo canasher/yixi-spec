@@ -1,0 +1,20 @@
+{
+  "schema": "yixi.uat.postrelease22.breakpoint.v1",
+  "date": "2026-10-23",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE22",
+  "previous_breakpoint": "../2026-10-23第二十一轮原因保持补证/续做断点.json",
+  "evidence_index": "证据索引.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "3d98198d55857c0b95dddd7595ccf1e8b0146ee7",
+  "web_input": "da19ed7446b76d494367b364f3a9d910d186da94",
+  "web_candidate": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "deployment": "PENDING_USER_UPDATE",
+  "target_chrome_regression": "NOT_RUN",
+  "complete_runtime_sha": null,
+  "original_first_back_root_cause": "UNRESOLVED_NOT_CLOSED_BY_ENGINEERING_HARDENING",
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "runtime": {"route": "/applications/rental-assets/items?detail=6591276291409921861", "pending_form": false, "unknown_business_result": false, "save_submissions": 0, "role_changes": 0, "direct_storage_mutations": 0},
+  "next_action": "用户发布e7781d0后，原Chrome定点验证首次返回保护与可观察原生取消；保留导航类别和稳定输入证据，不能用隔离工程结果替代现场",
+  "unchanged": ["第19轮已完成核心不重跑", "第21轮首次Back FAIL和原因保持成功均保留", "DIRTY/原CSV/真实保存异常前提未复核", "既有BB/QN/SP/R003业务不重做"],
+  "full_check_limit": "统一check架构通过，随后既有两份codec格式FAIL；非全仓通过，不合入或部署"
+}

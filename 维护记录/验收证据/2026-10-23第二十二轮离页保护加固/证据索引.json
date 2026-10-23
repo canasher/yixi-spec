@@ -1,0 +1,18 @@
+{
+  "schema": "yixi.uat.postrelease22.evidence.v1",
+  "date": "2026-10-23",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE22",
+  "web_commit": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "web_tree": "a86b0aa5319f8dbc184fc8beffde9e5562f36dfe",
+  "blobs": {
+    "apps/customer-console/src/components/CustomerDrawerNavigationGuard.tsx": "fd2a667a0edec5deee685af7fce196c1f683be86",
+    "apps/customer-console/src/components/CustomerDrawerNavigationGuard.test.tsx": "31df297d7d41cd348add525696468bf994262886",
+    "apps/customer-console/e2e/drawer-navigation.spec.ts": "bfbb099aad0fb89a4cdd27a5dfb834d9d893f30e"
+  },
+  "engineering_results": {"unit_pass": 20, "browser_pass": 8, "final_cross_document_recheck_pass": 1, "recheck_adds_unique_cases": false, "customer_typecheck": "PASS", "customer_build": "PASS", "changed_file_format_and_lint": "PASS", "architecture": "PASS", "full_check": "FAIL_EXISTING_CODEC_FORMAT", "formal_uat": "NOT_RUN"},
+  "red_test": {"scope": "布局阶段保护注册后beforeunload事件", "baseline": [false, false, false, false], "expected_and_repaired": [true, false, true, false], "original_chrome_root_cause_proved": false},
+  "cross_document": {"baseline_native_cancel_already_passed": true, "candidate_native_cancel_passed": true, "user_chrome_executed": false},
+  "review": {"independent_agent": true, "same_model": true, "blocking_findings": 0, "url_stability_suggestion_applied": true},
+  "raw_receipts": "本会话命令回执；不冒称已创建持久原件归档",
+  "archive_id": null
+}
