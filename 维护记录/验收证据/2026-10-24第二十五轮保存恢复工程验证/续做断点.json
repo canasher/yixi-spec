@@ -1,0 +1,20 @@
+{
+  "schema": "yixi.uat.engineering25.breakpoint.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-ENGINEERING25",
+  "previous_breakpoint": "../2026-10-24第二十四轮手工取消回读/续做断点.json",
+  "evidence_index": "证据索引.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "7fcc25ea61d32a057111fd95701bcf9f2dc058d7",
+  "web_input": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "web_test_commit": "9cb8595f00bcc95709394342e8f6e31ce96713f5",
+  "product_source_changed": false,
+  "deployment_required_for_this_test_change": false,
+  "engineering_cases": {"PASS": 5, "FAIL": 0},
+  "original_chrome_new_page_units": 0,
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "original_chrome": {"used_this_round": false, "state_rechecked": false, "last_known_route": "/applications/rental-assets/items?detail=6591276291409921861", "last_known_state_source": "第24轮只读收尾，不冒称本轮再查", "business_saves_this_round": 0},
+  "limits": ["Web Locks等待不等于HTTP页面队列或正式后端pending", "原型UI并发版本冲突不等于正式API409", "演示失败/UNKNOWN不等于真实故障", "失败重试内部键相同未被本用例证明", "完整运行SHA未知及旧异常根因保留"],
+  "next_action": "真实新增合法现场异常、DIRTY具体库位与实物依据、原CSV取回条件后再补证；不默认重跑已通过五项工程测试",
+  "prohibited": ["原Chrome故障注入", "重做BB/QN/SP/R003既有业务", "清库或重置", "把工程通过升级正式70项"]
+}

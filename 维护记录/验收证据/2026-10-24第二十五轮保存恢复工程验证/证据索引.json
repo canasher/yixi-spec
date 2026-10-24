@@ -1,0 +1,23 @@
+{
+  "schema": "yixi.uat.engineering25.evidence.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-ENGINEERING25",
+  "mode": "ISOLATED_ENGINEERING_SIMULATION",
+  "web_commit": "9cb8595f00bcc95709394342e8f6e31ce96713f5",
+  "web_tree": "4eb8b2af3ff9099da66dcf32de500c7c4b4eca21",
+  "test_file": "apps/customer-console/e2e/drawer-navigation.spec.ts",
+  "test_blob": "ddd3b9a02a321689a75f59c531bff8aa7f874547",
+  "cases": [
+    {"id": "SAVE_PENDING", "result": "PASS", "basis": "真实同源Web Lock等待，关闭及Back受锁，释放后唯一操作事件"},
+    {"id": "SAVE_FAILURE", "result": "PASS", "basis": "演示失败快照不变，继续编辑保输入错误，重试唯一写入", "first_failed_operation_id_observed": false},
+    {"id": "STALE_ITEM_VERSION", "result": "PASS", "basis": "另页正常UI保存后旧版本拒绝、原依据冻结、重读角色复位并保输入"},
+    {"id": "UNKNOWN_IN_EDITOR", "result": "PASS", "basis": "原编辑器查询同ID，不再写事件品项"},
+    {"id": "UNKNOWN_AFTER_RELOAD", "result": "PASS", "basis": "工程明确接受beforeunload后刷新，由顶部查询同ID"}
+  ],
+  "final_run": {"passed": 5, "duration_seconds": 23.0, "repeats_add_cases": false},
+  "checks": {"customer_typecheck": "PASS", "test_file_prettier": "PASS", "test_file_eslint": "PASS", "git_diff_check": "PASS", "full_check": "NOT_RUN_THIS_ROUND_PREVIOUS_CODEC_FORMAT_LIMIT_RETAINED"},
+  "original_chrome_used": false,
+  "new_original_page_units": 0,
+  "raw_receipts": "本会话命令回执；未创建持久原件归档",
+  "archive_id": null
+}
