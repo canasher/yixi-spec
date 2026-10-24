@@ -1,0 +1,116 @@
+{
+  "schema": "yixi.uat.postrelease27.evidence.v1",
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "kind": "DOCUMENTATION",
+  "mode": "DISCOVER",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE27",
+  "branch": "codex/laundry-phase1-prototype",
+  "baselines": {
+    "spec": "28e9b1ca661951b3da33b740b821c9185d8725a9",
+    "web": "1eec90d94429af0e2ae369b3b8350f0d5f69fc3f",
+    "runtime_sha": null,
+    "runtime_update": "用户报告已更新；页面未显示完整运行SHA"
+  },
+  "related": [
+    "R054",
+    "R043",
+    "R051",
+    "R063"
+  ],
+  "original_tab": "585840492",
+  "browser_family": "Chrome",
+  "observations": [
+    {
+      "id": "CURRENT_BILL_READ",
+      "status": "OBSERVED",
+      "meaning": "只读观察通过，不是整卡验收",
+      "route": "/applications/rental-finance/bills?detail=5722787052786643611",
+      "bill": "5722787052786643611",
+      "frozen": "160.03",
+      "current": "80.01",
+      "paid": "160.03",
+      "refunded": "80.02",
+      "unpaid": "0.00",
+      "exports": [
+        "冻结版本160.03，可下载，按钮可用",
+        "所选来源当前调整80.01，可下载"
+      ]
+    },
+    {
+      "id": "ORIGINAL_CSV",
+      "status": "BLOCKED",
+      "attempts": 1,
+      "bytes_obtained": 0,
+      "files_obtained": 0,
+      "receipt": "既存冻结版下载尝试的整体调用超时；没有文件路径或点击完成回执",
+      "limits": "不能确认是否实际触发下载或用户本机产生副本，不判产品失败；未尝试第二份，不重生成"
+    },
+    {
+      "id": "RECONNECT",
+      "status": "BLOCKED",
+      "receipt": "原标签页重新接管成功；随后DOM与截图报Debugger unattached，续做标记成功",
+      "limits": "不把标签页列表或接管元数据当作页面已读"
+    },
+    {
+      "id": "DIRTY_LEAF_AND_PHYSICAL_PROOF",
+      "status": "NOT_RUN",
+      "reason": "连接失效前未进入仓库"
+    },
+    {
+      "id": "PRODUCT_FIX_TARGET_REGRESSION",
+      "status": "NOT_RUN",
+      "reason": "没有原现场成功保存/查询原结果/质量跨类型跳转执行；完整运行SHA未知"
+    }
+  ],
+  "counters": {
+    "business_saves": 0,
+    "role_switches": 0,
+    "direct_storage_mutations": 0,
+    "money_fee_inventory_writes": 0,
+    "period_closes": 0,
+    "export_creates_or_revokes": 0,
+    "new_page_pass_units": 0
+  },
+  "formal70": {
+    "通过": 0,
+    "失败": 0,
+    "受阻": 0,
+    "未执行": 70
+  },
+  "checks": {
+    "documentation": {
+      "status": "PASS",
+      "command": "python3 -B 校验/检查文档.py",
+      "exit_code": 0,
+      "markdown": 69,
+      "local_links_and_anchors": 1099,
+      "formal_not_run": 70
+    },
+    "git_diff": {
+      "status": "PASS",
+      "command": "git diff --check；暂存后另检查git diff --cached --check",
+      "exit_code": 0
+    },
+    "json": {
+      "status": "PASS",
+      "files": 2
+    },
+    "engineering": {
+      "status": "NOT_RUN",
+      "reason": "产品源码未改；不继承前轮通过作本轮结果"
+    }
+  },
+  "evidence": {
+    "raw_receipts": "本会话浏览器、GitHub与命令实际回执",
+    "new_archive": null,
+    "new_library_id": null,
+    "new_screenshots": 0
+  },
+  "review": {
+    "status": "PASS",
+    "reviewer": "独立同模型代理 /root/review_evidence",
+    "findings": "无阻断；采纳只读观察使用OBSERVED避免自动汇总误计的建议",
+    "limits": "读实际差异，不是现场重跑或人工签署"
+  }
+}

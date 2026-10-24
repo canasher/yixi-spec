@@ -1,0 +1,44 @@
+{
+  "schema": "yixi.uat.postrelease27.breakpoint.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE27",
+  "previous_breakpoint": "../2026-10-24第二十六轮剩余核对与工程收尾/续做断点.json",
+  "evidence_index": "证据索引.json",
+  "remaining_matrix": "../2026-10-24第二十六轮剩余核对与工程收尾/剩余工作对照.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "28e9b1ca661951b3da33b740b821c9185d8725a9",
+  "web": "1eec90d94429af0e2ae369b3b8350f0d5f69fc3f",
+  "runtime_sha": null,
+  "stage": "BROWSER_CONTROL_LOST_AFTER_EXISTING_DOWNLOAD_ATTEMPT",
+  "product_changes": 0,
+  "product_deployment": "用户报告更新；完整运行版本与现场修复行为仍未证实",
+  "original_browser": {
+    "tab_id": "585840492",
+    "last_read_route": "/applications/rental-finance/bills?detail=5722787052786643611",
+    "known_pending_form": false,
+    "known_unknown_business_write": false,
+    "handoff_mark": "SUCCESS",
+    "control": "NOT_ATTACHED"
+  },
+  "formal70": {
+    "通过": 0,
+    "失败": 0,
+    "受阻": 0,
+    "未执行": 70
+  },
+  "next": [
+    "恢复当前Chrome标签页控制，先只读当前现场，不自动刷新",
+    "优先读取仓库、BB原DIRTY件合法有效叶库位和独立实物依据；未齐不造库位",
+    "再处理两份既存原CSV实际字节；不重复当前下载等待路径，不重新生成",
+    "具备合法保存测试前提和版本证据后才复验第26轮产品修复；不重复原已完成业务"
+  ],
+  "do_not_repeat": [
+    "BB/QN/SP/R003既有业务",
+    "第24轮手工取消",
+    "原Chrome故障注入",
+    "直接存储修改/重置",
+    "收货/退款/资金/费用/库存写入",
+    "关期/生成或撤销导出"
+  ],
+  "external_conditions": "正式API、IAM、设备、规则采纳、原历史节点与旧事故根因沿第26轮保留，本轮未重新调查"
+}
