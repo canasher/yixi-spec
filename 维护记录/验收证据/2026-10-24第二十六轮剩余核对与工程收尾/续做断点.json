@@ -1,0 +1,36 @@
+{
+  "schema": "yixi.uat.closeout26.breakpoint.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-CLOSEOUT26",
+  "previous_breakpoint": "../2026-10-24第二十五轮保存恢复工程验证/续做断点.json",
+  "evidence_index": "证据索引.json",
+  "remaining_matrix": "剩余工作对照.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "78d65ccad9948967ca0bbb8b60dadb3ff4093ad8",
+  "web_input": "9cb8595f00bcc95709394342e8f6e31ce96713f5",
+  "web_candidate": "1eec90d94429af0e2ae369b3b8350f0d5f69fc3f",
+  "web_tree": "900429e2f3b711108ed1eb532b36ab0b01faa799",
+  "web_remote_changed_blobs_verified": 9,
+  "stage": "ENGINEERING_AND_DOCUMENTATION_COMPLETE_EXTERNAL_CONDITIONS_REMAIN",
+  "evidence_archive": {"library_file_id": "libfile_9ec5c7a698108191a8a323edc04a8c50", "filename": "yixi-uat26-closeout-20261024.zip", "sha256": "03061097cfa3d263b274113ce981b83c838dc25beb80b7d6f74cb95373922480"},
+  "engineering_latest": {"unit_tests": 1189, "browser_distinct_cases": 352, "browser_latest_passed": 352, "browser_latest_failed": 0, "browser_skipped": 0, "single_browser_run_all_green": false, "full_check": "PASS", "customer_build": "PASS"},
+  "product_fix_needs_deployment": true,
+  "formal70": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "original_browser": {
+    "tab_id": "585840492",
+    "last_observed_route": "/applications/rental-finance/bills?detail=5722787052786643611",
+    "state": "连接失效前只读账单；恢复原品项路由尝试失败，当前页面未确认",
+    "connection": "CONTROL_NOT_ATTACHED",
+    "known_pending_form": false,
+    "known_unknown_business_write": false,
+    "next_browser_step": "控制连接恢复后先只读核当前现场；不自动刷新或重做已完成业务"
+  },
+  "external_only_after_engineering_closeout": [
+    "候选产品修复部署及完整运行SHA核对；只验证成功保存/原结果恢复后的关闭，不无条件复演旧现场异常",
+    "原CSV两份实际字节及SHA256；只能取既存原件，不重导出或从存储重建",
+    "BB原DIRTY件合法具体叶库位及独立实物位置依据",
+    "正式租洗API/企业库迁移/事务/并发候选；正式IAM、设备与已采纳规则客户版本",
+    "R009原换芯、R013原QM40等相关原历史合法节点；第21轮旧异常根因仍未定"
+  ],
+  "do_not_repeat": ["第24轮手工取消", "BB/QN/SP/R003既有业务", "原Chrome故障注入", "浏览器存储修改/重置", "收货/退款/资金/费用/库存写入", "关期/新建或撤销导出", "把工程模拟当正式70通过"]
+}

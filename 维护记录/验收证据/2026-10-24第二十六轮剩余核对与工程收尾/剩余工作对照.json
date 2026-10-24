@@ -1,0 +1,76 @@
+{
+  "schema": "yixi.uat.closeout26.remaining.v1",
+  "date": "2026-10-24",
+  "meaning": "70卡的接续调度分类；不是正式执行结果，不删除历史失败或剩余前提",
+  "formal_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "source_matrix": {
+    "archive": "uat19-postrelease-dirty-regression-20261022.zip",
+    "bytes": 735200,
+    "sha256": "c9e57805869b353c037d9ce1ad4bf14447c980beab4dc5e2abac3724b75e96fb",
+    "library_file_id": "libfile_8098f500a01081919a7ee442c93ff16d",
+    "matrix_path": "uat19-work/70项证据对照.json",
+    "matrix_sha256": "d8004946965f10e25f39a1b9bd4664f4b40ac5d132d105a0a9c7d2b68c6c0468",
+    "payloads_verified": 81,
+    "verification": "本轮重新取回；ZIP CRC、路径安全及全部81份载荷长度/SHA256均通过"
+  },
+  "groups": [
+    {
+      "kind": "ENGINEERING_CORE_REVIEWED",
+      "count": 20,
+      "ids": ["R003", "R005", "R007", "R016", "R021", "R022", "R025", "R034", "R035", "R039", "R040", "R041", "R042", "R046", "R050", "R051", "R058", "R059", "R061", "R070"],
+      "meaning": "核心工程断言已核；R016/021/025/050/051本轮补强，仍不代替原现场或整卡正式前提"
+    },
+    {
+      "kind": "ORIGINAL_OBJECT_OR_REAL_CROSS_SURFACE_REQUIRED",
+      "count": 9,
+      "ids": ["R009", "R010", "R013", "R017", "R018", "R026", "R037", "R054", "R069"],
+      "meaning": "须原对象、原历史或真实跨端条件；新建相似对象或隔离重导出不能替代"
+    },
+    {
+      "kind": "FORMAL_IDENTITY_API_DATABASE_DEVICE_OR_POLICY_REQUIRED",
+      "count": 22,
+      "ids": ["R001", "R002", "R004", "R006", "R008", "R011", "R012", "R015", "R019", "R024", "R028", "R030", "R033", "R045", "R049", "R052", "R053", "R055", "R056", "R057", "R060", "R062"],
+      "meaning": "主要剩余断言需正式身份、API/事务/并发、设备或历史策略；已有原型模拟并未抹去"
+    },
+    {
+      "kind": "CORE_PAGE_SUBCASES_ALREADY_RECORDED",
+      "count": 13,
+      "ids": ["R014", "R020", "R023", "R027", "R029", "R031", "R032", "R036", "R038", "R043", "R044", "R047", "R048"],
+      "meaning": "核心页面子例有历史证据，不重做既有业务；具体DIRTY叶位等仍独立保留"
+    },
+    {"kind": "DRAWER_SUBCASES_AND_ENGINEERING_RECORDED", "count": 1, "ids": ["R063"], "meaning": "第21—25轮历史结果和本轮公共完成时序修复分别保留，整卡未正式执行"},
+    {"kind": "PHASE_ONE_STRUCTURE_AND_REJECTION_ONLY", "count": 3, "ids": ["R064", "R065", "R066"], "meaning": "一期结构/拒绝路径；禁止扩建普洗数量业务以凑完成"},
+    {"kind": "FUTURE_SCOPE", "count": 2, "ids": ["R067", "R068"], "meaning": "后续范围，不计为一期欠交付"}
+  ],
+  "engineering_assertion_map": [
+    {"id": "R003", "file": "rentalLocationCommands.test.ts", "assertion": "停用上级后子库位拒绝新作业，原资产不变"},
+    {"id": "R005", "file": "rentalPoolCommands.test.ts", "assertion": "显式共享池、独立额度及同件先备独占"},
+    {"id": "R007", "file": "rentalAssetBatchCommands.test.ts", "assertion": "激活50不增可发，放行20增20，余30 HOLD，资金周转不变"},
+    {"id": "R016", "file": "rentalPoolCommands.test.ts", "added_this_round": true, "assertion": "同件合法H1装交收/产出后再发H2；H2回收O减1，H1不变，旧轮迟到及重放不重复"},
+    {"id": "R021", "file": "apps/customer-console/e2e/rental-prototype.spec.ts", "added_this_round": true, "assertion": "生产打扎确实空包装/产出列表及UNKNOWN原业务未决UI；不扩为所有质量异常或通用生产任务已验收"},
+    {"id": "R022", "file": "rentalHandlingUnitCommands.test.ts", "assertion": "重组和重放不改资产、收货、洗次、资金、配额"},
+    {"id": "R025", "file": "rentalQualityCommands.test.ts", "added_this_round": true, "assertion": "首轮90实际PICK/LOAD/DELIVER，余10继续返洗；第二轮仅10计次，原发货/周转/收货/资金保持"},
+    {"id": "R034", "file": "rentalResponsibilityDispositionPreview.test.ts", "assertion": "Q降低且T到期，R转O与O转R均保持负可用额度"},
+    {"id": "R035", "file": "rentalDeliveryScanCommands.test.ts", "assertion": "目标100实交90，余10在车，不自动补足；不覆盖全部正式超时分支"},
+    {"id": "R039", "file": "rentalFinanceCommands.test.ts", "assertion": "缺价草稿允许，发布/需求拒绝PRICE_MISSING且状态不变"},
+    {"id": "R040", "file": "rentalFundsCommands.test.ts", "assertion": "充值申请不入账，审核原请求重放只入账一次，拒绝不入账"},
+    {"id": "R041", "file": "rentalBillingCommands.test.ts", "assertion": "同费用不重复归集；核准100/当前90分离，冻结CSV保留"},
+    {"id": "R042", "file": "rentalFundsCommands.test.ts", "assertion": "信用500，未付100转信用占用100，可用资格始终400，核准快照不变"},
+    {"id": "R046", "file": "rentalFinancialBatchCommands.test.ts", "assertion": "停用/缺价规则只留异常，不默认收费，不借其他客户"},
+    {"id": "R050", "file": "rentalStocktakeCommands.test.ts", "added_this_round": true, "assertion": "两酒店各10合计20；观察分类10/10，复核正好原20；资产/周转/发货/资金不变；不是实际IAM范围验证"},
+    {"id": "R051", "file": "rentalQualityCommands.test.ts", "added_this_round": true, "assertion": "同件司机回收/厂收/人工产出各1，位置RETURN_VEHICLE到DIRTY到CLEAN，重放不叠加；旧999和旧API退役仍待正式边界"},
+    {"id": "R058", "file": "rentalRefundCommands.test.ts", "assertion": "100先退60、在退40，UNKNOWN占用保留，确定无效果才释放，拒绝超退"},
+    {"id": "R059", "file": "rentalFundsCommands.test.ts", "assertion": "跨客户/币种及不足余额拒绝；顺序竞争现金只成功一笔，不称数据库并发"},
+    {"id": "R061", "file": "rentalRecoveryPolicyCommands.test.ts", "assertion": "新旧轮冻结不同规则，厂收冲正不重复，原日单保留"},
+    {"id": "R070", "file": "rentalDispatchCommands.test.ts", "assertion": "同任务装交100/回收80，R减100/O加100减80，资金不变；车载80阻止关单，卸收后关闭"}
+  ],
+  "test_path_base": "canasher/yixi-web:apps/customer-console/src/pages/laundry/demo/；E2E单独位于apps/customer-console/e2e/",
+  "external_blockers": [
+    {"id": "ORIGINAL_CSV", "cards": ["R054"], "need": "两份既存导出6134757777445939272/3451186522090778219的实际字节、原文件名、SHA256和内容核对", "status": "BLOCKED", "observation": "本轮原账单可下载行160.03/80.01已读；下载等待后工具超时，随后控制连接失效；CSV原件仍0，未重建或重新生成"},
+    {"id": "DIRTY_LEAF_AND_PHYSICAL_PROOF", "cards": ["R043", "R051"], "need": "BB原DIRTY件的合法有效具体叶库位及独立实物位置依据", "status": "NOT_RUN_THIS_ROUND", "observation": "连接失效前未进入仓库页；不能声称本轮条件未变，更不能造库位/重复收货凑结果"},
+    {"id": "FORMAL_BACKEND", "need": "固定租洗API/OpenAPI、企业库迁移、事务和并发集成候选", "observation": "yixi-saas同名分支不存在；main ef7f7c1ef8cba71faebe46397e2678bce164e472的business/rental仅package-info.java，不构成正式业务实现或验收环境"},
+    {"id": "IAM_DEVICE_POLICY_AND_ORIGINAL_HISTORY", "need": "正式酒店/设备身份、实际读头/打印/离线/升级条件、规则客户版本采纳，以及相关原对象合法节点", "observation": "沿原70矩阵逐卡前提保留，不由工程模拟升级"},
+    {"id": "RUNTIME_AND_OLD_INCIDENTS", "cards": ["R063"], "need": "完整实际运行SHA及第21轮首次Back/自动刷新异常的独立根因证据", "observation": "本轮成功完成回调的旧锁问题有独立复现和修复，不等于旧现场异常已定位"}
+  ],
+  "do_not_repeat": ["第24轮手工取消", "BB/QN/SP/R003既有业务", "收货/退款/费用/资金写入", "关期/生成或撤销导出", "原Chrome故障注入或浏览器存储修改"]
+}
