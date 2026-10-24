@@ -1,0 +1,18 @@
+{
+  "schema": "yixi.uat.postrelease24.breakpoint.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE24",
+  "previous_breakpoint": "../2026-10-24第二十三轮发布后复验/续做断点.json",
+  "evidence_index": "证据索引.json",
+  "spec_input": "5816ac0538289065846291bfc0645f71b6556f7b",
+  "web_inherited_candidate": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "web_head_rechecked_this_round": false,
+  "complete_runtime_sha": null,
+  "native_cancel": "PASS_LIMITED_USER_REPORTED_CANCEL_AND_AGENT_STABLE_INPUT_READBACK",
+  "previous_manual_wait_resolved": true,
+  "new_page_pass_units": 0,
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "runtime": {"route": "/applications/rental-assets/items?detail=6591276291409921861", "handoff": "原只读详情", "pending_form": false, "unknown_business_result": false, "save_submissions": 0, "direct_storage_mutations": 0},
+  "next_action": "按真实新增前提推进仍缺的保存异常/具体DIRTY库位/原CSV；不默认重复手工取消或已完成核心，不重做既有业务",
+  "historical_anomalies_preserved": ["第21轮首次Back丢输入根因未定", "自动刷新丢输入及工具/浏览器/运行版本/产品原因未分离"]
+}

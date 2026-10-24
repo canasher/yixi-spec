@@ -1,0 +1,16 @@
+{
+  "schema": "yixi.uat.postrelease24.evidence.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE24",
+  "user_report": "已取消",
+  "native_dialog_observed_by_agent": false,
+  "input_refilled_before_readback": false,
+  "first_read_at_utc": "2026-10-24T01:38:52.056Z",
+  "stable_read": {"at_utc": "2026-10-24T01:39:11.906Z", "reason": "UAT23-NATIVE-CANCEL-20261024：手动刷新取消验证，未保存。", "proof": "", "item_version": "8430535518194943583", "confirmation_count": 0, "screenshot_captured": true},
+  "cleanup": {"action": "清空临时原因后取消编辑", "save_clicked": false},
+  "safe_handoff": {"at_utc": "2026-10-24T01:39:40.137Z", "editor_count": 0, "confirmation_count": 0, "assets": 1, "services": 1, "maintenance_events": 2, "final_version_directly_observed": false, "screenshot_captured": true},
+  "result": "PASS_LIMITED_USER_ACTION_AND_AGENT_READBACK",
+  "new_page_pass_units": 0,
+  "raw_receipts": "本会话Browser回执与用户陈述；未创建持久原件归档",
+  "archive_id": null
+}
