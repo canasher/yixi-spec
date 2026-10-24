@@ -1,0 +1,18 @@
+{
+  "schema": "yixi.uat.postrelease23.evidence.v1",
+  "date": "2026-10-24",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE23",
+  "spec_input": "6b048075dc1f2fcddc666416ba48fb9ebf1e4253",
+  "web_remote_head": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "complete_runtime_sha": null,
+  "runtime_startup_short_sha": "f7f4aa2ee065",
+  "observations": [
+    {"id": "BACK_CONFIRM", "at_utc": "2026-10-24T00:18:04.560Z", "actual": "首次Back出现未保存确认，detail URL和原因保持"},
+    {"id": "CONTINUE_STABLE", "at_utc": "2026-10-24T00:18:16.021Z", "confirmation_count": 0, "reason": "UAT23-R063-REASON-20261024：发布后仅验证返回保护，不保存。", "proof": "", "item_version": "8430535518194943583", "screenshot_captured": true},
+    {"id": "NATIVE_RELOAD", "at_utc": "2026-10-24T00:18:59.981Z", "attempts": 1, "coordinate_focus_before_attempt": true, "native_dialog": null, "dismiss_executed": false, "immediate": "页面加载态"},
+    {"id": "RELOAD_STABLE", "at_utc": "2026-10-24T00:19:12.626Z", "editor_count": 0, "temporary_input_lost": true, "detail_history_events": 2, "asset_count": 1, "service_count": 1},
+    {"id": "MANUAL_HANDOFF", "at_utc": "2026-10-24T00:20:05.577Z", "reason": "UAT23-NATIVE-CANCEL-20261024：手动刷新取消验证，未保存。", "item_version": "8430535518194943583", "pending_form": true}
+  ],
+  "raw_receipts": "本会话Browser回执及截图；未创建持久原件归档",
+  "archive_id": null
+}

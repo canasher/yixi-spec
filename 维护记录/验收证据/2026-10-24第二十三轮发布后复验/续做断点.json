@@ -1,0 +1,19 @@
+{
+  "schema": "yixi.uat.postrelease23.breakpoint.v1",
+  "date": "2026-10-24",
+  "previous_breakpoint": "../2026-10-23第二十二轮离页保护加固/续做断点.json",
+  "main_record": "../../2026-10-18一期验收执行记录.md#UAT-POSTRELEASE23",
+  "evidence_index": "证据索引.json",
+  "branch": "codex/laundry-phase1-prototype",
+  "spec_input": "6b048075dc1f2fcddc666416ba48fb9ebf1e4253",
+  "web_candidate": "e7781d013c53d7f6be22ac9ec5453d4ad63073f8",
+  "deployment": "USER_REPORTED_UPDATED_FULL_RUNTIME_SHA_UNKNOWN",
+  "page_results": {"planned": 1, "executed": 1, "PASS": 0, "FAIL": 0, "BLOCKED": 1, "NOT_RUN": 0},
+  "formal70_status": {"通过": 0, "失败": 0, "受阻": 0, "未执行": 70},
+  "first_back_and_continue": "OBSERVED_SUCCESS_THIS_ROUND_NOT_ROOT_CAUSE_CLOSURE",
+  "native_cancel": "NOT_EXECUTED_PENDING_USER_MANUAL_REFRESH_AND_CANCEL",
+  "automatic_dirty_reload": {"attempts": 1, "dialog_observed": false, "temporary_input_lost": true, "cause": "UNRESOLVED", "do_not_repeat": true},
+  "runtime": {"route": "/applications/rental-assets/items?detail=6591276291409921861", "item_version": "8430535518194943583", "pending_form": true, "temporary_reason": "UAT23-NATIVE-CANCEL-20261024：手动刷新取消验证，未保存。", "unknown_business_result": false, "save_submissions": 0, "role_changes": 0, "direct_storage_mutations": 0},
+  "next_action": "用户手动刷新并选取消后，代理先独立读同一原因是否保留；不要再次自动刷新。完成取证后清空临时原因并取消编辑，不保存",
+  "constraints": ["保留旧FAIL与未知根因", "正式70项不升级", "DIRTY/CSV/真实保存异常未复核", "BB/QN/SP/R003既有业务不重做"]
+}
